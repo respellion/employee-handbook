@@ -62,6 +62,8 @@ stages:
               instructions: "Please validate staging area before pushing to prod"
 
       - job: Prod
+        dependsOn: waitForValidation
+        displayName: Deploy to prod
         steps:
           - task: DownloadSecureFile@1
             name: key
