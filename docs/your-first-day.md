@@ -27,5 +27,5 @@ Here are a few topics for the first few weeks that we will discuss together:
 
  
 
-All the necessary information is available via SharePoint.
+All the necessary information is available via SharePoint or Nextcloud.
 [Back to home](index.md)
