@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Open MKDocs (Docker Run)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:${config:mkdocs.port}",
+      "preLaunchTask": "Dev: mkdocs serve (docker run)",
+      "postDebugTask": "Dev: mkdocs stop"
+    }
+  ]
+}
