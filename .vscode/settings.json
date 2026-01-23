@@ -1,4 +1,5 @@
 {
     "ansible.python.interpreterPath": "/bin/python",
-    "mkdocs.port": 8000
+    "mkdocs.port": 8000,
+    "mkdocs.container": "eh-container"
 }
