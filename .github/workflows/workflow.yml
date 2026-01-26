@@ -1,0 +1,200 @@
+name: Deployment Pipeline
+
+on:
+  workflow_dispatch: # Manual trigger only
+
+jobs:
+  deploy-infra:
+    name: Deploy Infrastructure
+    runs-on: ubuntu-latest
+
+    environment:
+      name: infra
+      url: ${{ steps.deploy.outputs.url }}
+    # Requires manual approval via 'infra' environment protection rules
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Ansible
+        run: |
+          pip install ansible
+          ansible --version
+
+      - name: Install SSH key
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Install Ansible collections and roles
+        run: |
+          # Create directories if they don't exist
+          mkdir -p ~/.ansible/collections
+          # Install requirements
+          ansible-galaxy install -r requirements.yml --force
+          ansible-galaxy collection install -r requirements.yml --force
+
+      - name: Validate Ansible syntax
+        run: |
+          ansible-playbook --syntax-check -i hosts.ini deploy_infra_playbook.yml
+
+      - name: Run Ansible playbook
+        run: |
+          ansible-playbook -i hosts.ini deploy_infra_playbook.yml \
+            --diff \
+            --verbose
+        env:
+          ANSIBLE_HOST_KEY_CHECKING: "False"
+          ANSIBLE_FORCE_COLOR: "1"
+          ANSIBLE_STDOUT_CALLBACK: yaml
+
+      - name: Post-deployment health check
+        if: success()
+        run: |
+          echo "Deployment completed successfully!"
+          # Add any post-deployment validation commands here
+
+  deploy-staging:
+    name: Deploy Staging
+    runs-on: ubuntu-latest
+    environment: staging
+    # No manual approval; runs immediately when workflow starts
+    # Independent of infra job
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Ansible
+        run: |
+          pip install ansible
+          ansible --version
+
+      - name: Install SSH key
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Install Ansible collections and roles
+        run: |
+          # Create directories if they don't exist
+          mkdir -p ~/.ansible/collections
+          # Install requirements
+          ansible-galaxy install -r requirements.yml --force
+          ansible-galaxy collection install -r requirements.yml --force
+
+      - name: Validate Ansible syntax
+        run: |
+          ansible-playbook --syntax-check -i hosts.ini deploy_playbook.yml
+
+      - name: Run Ansible playbook
+        run: |
+          ansible-playbook -i hosts.ini deploy_playbook.yml \
+            -e env=staging \
+            --diff \
+            --verbose
+        env:
+          ANSIBLE_HOST_KEY_CHECKING: "False"
+          ANSIBLE_FORCE_COLOR: "1"
+          ANSIBLE_STDOUT_CALLBACK: yaml
+
+      - name: Post-deployment health check
+        if: success()
+        run: |
+          echo "Deployment completed successfully!"
+          # Add any post-deployment validation commands here
+
+  deploy-prod:
+    name: Deploy Prod
+    needs: deploy-staging # Only waits for staging, not infra
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: ${{ steps.deploy.outputs.url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Ansible
+        run: |
+          pip install ansible
+          ansible --version
+
+      - name: Install SSH key
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Install Ansible collections and roles
+        run: |
+          # Create directories if they don't exist
+          mkdir -p ~/.ansible/collections
+          # Install requirements
+          ansible-galaxy install -r requirements.yml --force
+          ansible-galaxy collection install -r requirements.yml --force
+
+      - name: Validate Ansible syntax
+        run: |
+          ansible-playbook --syntax-check -i hosts.ini deploy_playbook.yml
+
+      - name: Run Ansible playbook
+        run: |
+          ansible-playbook -i hosts.ini deploy_playbook.yml \
+            -e env=prod \
+            --diff \
+            --verbose
+        env:
+          ANSIBLE_HOST_KEY_CHECKING: "False"
+          ANSIBLE_FORCE_COLOR: "1"
+          ANSIBLE_STDOUT_CALLBACK: yaml
+
+      - name: Post-deployment health check
+        if: success()
+        run: |
+          echo "Deployment completed successfully!"
+          # Add any post-deployment validation commands here
+
+  test-syntax:
+    name: Test Playbook Syntax
+    runs-on: ubuntu-latest
+    # Run on PRs and pushes
+    if: always()
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Ansible
+        run: |
+          pip install ansible
+          ansible --version
+
+      - name: Install Ansible dependencies
+        run: |
+          ansible-galaxy install -r requirements.yml --force
+          ansible-galaxy collection install -r requirements.yml --force
+
+      - name: Check playbook syntax
+        run: |
+          ansible-playbook --syntax-check -i hosts.ini deploy_infra_playbook.yml
