@@ -1,15 +1,17 @@
-name: Deploy prod
+name: Deploy Infra
 
 on:
   workflow_dispatch: # Manual trigger only
 
 jobs:
-  deploy-prod:
-    name: Deploy Prod
+  deploy-infra:
+    name: Deploy Infrastructure
     runs-on: ubuntu-latest
+
     environment:
-      name: Prod
+      name: infra
       url: ${{ steps.deploy.outputs.url }}
+    # Requires manual approval via 'infra' environment protection rules
 
     steps:
       - name: Checkout repository
@@ -40,12 +42,11 @@ jobs:
 
       - name: Validate Ansible syntax
         run: |
-          ansible-playbook --syntax-check -i hosts.ini deploy_playbook.yml
+          ansible-playbook --syntax-check -i hosts.ini deploy_infra_playbook.yml
 
       - name: Run Ansible playbook
         run: |
-          ansible-playbook -i hosts.ini deploy_playbook.yml \
-            -e env=prod \
+          ansible-playbook -i hosts.ini deploy_infra_playbook.yml \
             --diff \
             --verbose
         env:

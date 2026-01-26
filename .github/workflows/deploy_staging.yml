@@ -1,16 +1,15 @@
-name: Deploy prod
+name: Deploy Staging
 
 on:
   workflow_dispatch: # Manual trigger only
 
 jobs:
-  deploy-prod:
-    name: Deploy Prod
+  deploy-staging:
+    name: Deploy Staging
     runs-on: ubuntu-latest
-    environment:
-      name: Prod
-      url: ${{ steps.deploy.outputs.url }}
-
+    environment: staging
+    # No manual approval; runs immediately when workflow starts
+    # Independent of infra job
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -45,7 +44,7 @@ jobs:
       - name: Run Ansible playbook
         run: |
           ansible-playbook -i hosts.ini deploy_playbook.yml \
-            -e env=prod \
+            -e env=staging \
             --diff \
             --verbose
         env:
