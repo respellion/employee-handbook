@@ -3,10 +3,30 @@ site_url: https://mydomain.org/
 theme:
   name: material
   custom_dir: overrides
+
   features:
     - header.autohide
+    - navigation.footer
+    - content.tabs.link
+
   palette:
     primary: custom
+  favicon: assets/images/favicon.svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/respellion
+      name: respellion on github
+
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/company/respellion/
+      name: respellion on Linkdin
+
+extra_javascript:
+  - javascripts/respellion.js
+
+repo_url: https://github.com/respellion/employee-handbook
 
 extra_css:
   - assets/stylesheets/extra.css

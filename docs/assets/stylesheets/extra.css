@@ -41,3 +41,14 @@ h2 {
     --md-primary-fg-color--light: #205661;
     --md-primary-fg-color--dark: #205661;
 }
+
+.md-header-banner img {
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    /* Prevent overflow */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin: 0;
+    /* Reset unintended spacing */
+}

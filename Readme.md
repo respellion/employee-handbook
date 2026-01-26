@@ -1,7 +1,7 @@
 
-# 📘 Respellion Employment Handbook
+# 📘 Respellion Employee Handbook
 
-Welcome! This repository contains the source for our internal **Employment Handbook**, built as a clean, modern, and easy-to-navigate documentation site.
+Welcome! This repository contains the source for our public **Employee Handbook**, built as a clean, modern, and easy-to-navigate documentation site.
 
 ---
 
