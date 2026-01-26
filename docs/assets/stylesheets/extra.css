@@ -37,9 +37,14 @@ h2 {
 }
 
 :root>* {
-    --md-primary-fg-color: #205661;
+    --md-primary-fg-color: #1f5560;
     --md-primary-fg-color--light: #205661;
-    --md-primary-fg-color--dark: #205661;
+    --md-primary-bg-color: #ece9e9;
+
+    --md-default-fg-color: #1f5560;
+    --md-default-fg-color--light: #205661;
+    --md-default-bg-color: #ece9e9;
+
 }
 
 .md-header-banner img {

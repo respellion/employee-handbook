@@ -7,7 +7,6 @@ theme:
   features:
     - header.autohide
     - navigation.footer
-    - content.tabs.link
 
   palette:
     primary: custom
