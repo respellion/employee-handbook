@@ -38,19 +38,19 @@ Respellion operates with:
 - A Huddle check-in meetings per week
 - A Huddle Elevator session each two months
 - A task board for tracking work
-- Microsoft Loop for administration and meeting notes
+- Microsoft Loop for administration and meeting notes  
 
 
-# Meeting Structure
+## Meeting Structure
 All meetings are administered in Microsoft Loop
 
-## Tactical Meetings
+### Tactical Meetings
 
 - Focus on operational issues and coordinating next actions
 - Results in clear tasks assigned to specific roles
 - Tasks are tracked on the Respellion Task Board
 
-## Governance Meetings
+### Governance Meetings
 
 - Focus on evolving the organizational structure
 - Create, modify, or remove roles based on emerging needs
