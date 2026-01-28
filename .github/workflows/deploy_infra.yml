@@ -55,7 +55,7 @@ jobs:
 
       - name: Run Ansible playbook
         run: |
-          ansible-playbook \ 
+          ansible-playbook \
             -e DOMAIN_NAME="$DOMAIN_NAME" \
             -e ANSIBLE_USER="$ANSIBLE_USER" \
             deploy_infra_playbook.yml \
