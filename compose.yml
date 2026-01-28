@@ -9,10 +9,10 @@ services:
       - 80:80
       - 443:443
     environment:
-      - DOMAIN=$(DOMAINNAME)
+      - DOMAIN=${DOMAIN_NAME}
 
   mkdocs:
     image: squidfunk/mkdocs-material
-    volumes: 
+    volumes:
       - ./:/docs:z
     command: serve --dev-addr 0.0.0.0:8000
