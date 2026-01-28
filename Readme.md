@@ -38,12 +38,12 @@ To run or contribute to this project locally, you’ll need:
 Run this command to start a live-reloading development server:
 
 ```bash
-podman run --rm -it -p 8000:8000 -v ${PWD}:/docs:z squidfunk/mkdocs-material serve --dev-addr 0.0.0.0:8000
+podman run --rm -it -p 8000:8000 -v ${PWD}:/docs:z squidfunk/mkdocs-material serve --livereload --dev-addr 0.0.0.0:8000
 ```
 
 or if you have Docker installed:
 ```bash
-docker run --rm -it -p 8000:8000 -v ${PWD}:/docs:z squidfunk/mkdocs-material serve --dev-addr 0.0.0.0:8000
+docker run --rm -it -p 8000:8000 -v ${PWD}:/docs:z squidfunk/mkdocs-material serve --livereload --dev-addr 0.0.0.0:8000
 ```
 
 
