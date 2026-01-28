@@ -37,13 +37,22 @@ jobs:
           ansible-galaxy install -r requirements.yml --force
           ansible-galaxy collection install -r requirements.yml --force
 
+      - name: Read deployment_vars.json with jq
+        id: read_vars
+        run: |
+          DOMAIN_NAME=$(jq -r '.domain_name' deployment_vars.json)
+          ANSIBLE_USER=$(jq -r '.ansible_user' deployment_vars.json)
+          echo "DOMAIN_NAME=$DOMAIN_NAME" >> $GITHUB_ENV
+          echo "ANSIBLE_USER=$ANSIBLE_USER" >> $GITHUB_ENV
+          echo "DOMAINNAME=$DOMAIN_NAME" >> $GITHUB_ENV
+
       - name: Validate Ansible syntax
         run: |
-          ansible-playbook --syntax-check -i hosts.ini deploy_playbook.yml
+          ansible-playbook --syntax-check -i "$DOMAINNAME," -u "$ANSIBLE_USER" deploy_playbook.yml
 
       - name: Run Ansible playbook
         run: |
-          ansible-playbook -i hosts.ini deploy_playbook.yml \
+          ansible-playbook -i "$DOMAINNAME," -u "$ANSIBLE_USER" deploy_playbook.yml \
             -e env=staging \
             --diff \
             --verbose
@@ -85,4 +94,4 @@ jobs:
 
       - name: Check playbook syntax
         run: |
-          ansible-playbook --syntax-check -i hosts.ini deploy_infra_playbook.yml
+          ansible-playbook --syntax-check -i "$DOMAINNAME," -u "$ANSIBLE_USER" deploy_infra_playbook.yml
