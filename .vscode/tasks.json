@@ -4,7 +4,7 @@
     {
       "label": "Dev: mkdocs serve (docker run)",
       "type": "shell",
-      "command": "docker run --rm --name ${config:mkdocs.container} -it -p ${config:mkdocs.port}:${config:mkdocs.port} -v ${workspaceFolder}:/docs:z squidfunk/mkdocs-material serve --dev-addr 0.0.0.0:${config:mkdocs.port}",
+      "command": "docker run --rm --name ${config:mkdocs.container} -it -p ${config:mkdocs.port}:${config:mkdocs.port} -v ${workspaceFolder}:/docs:z squidfunk/mkdocs-material serve --livereload --dev-addr 0.0.0.0:${config:mkdocs.port}",
       "isBackground": true,
       "presentation": {
         "reveal": "always",

@@ -38,12 +38,12 @@ To run or contribute to this project locally, you’ll need:
 Run this command to start a live-reloading development server:
 
 ```bash
-podman run --rm -it -p 8000:8000 -v ${PWD}:/docs:z squidfunk/mkdocs-material serve --dev-addr 0.0.0.0:8000
+podman run --rm -it -p 8000:8000 -v ${PWD}:/docs:z squidfunk/mkdocs-material serve --livereload --dev-addr 0.0.0.0:8000
 ```
 
 or if you have Docker installed:
 ```bash
-docker run --rm -it -p 8000:8000 -v ${PWD}:/docs:z squidfunk/mkdocs-material serve --dev-addr 0.0.0.0:8000
+docker run --rm -it -p 8000:8000 -v ${PWD}:/docs:z squidfunk/mkdocs-material serve --livereload --dev-addr 0.0.0.0:8000
 ```
 
 
@@ -55,7 +55,7 @@ Then open your browser to: [http://localhost:8000](http://localhost:8000)
 
 or if you have Docker installed and are using VS Code press **F5**, that will start the container and website.
 
-> 🔍 **Note**: For VS Code we use the port from the settings.json.
+> 🔍 **Note**: For VS Code we use the port from the .vscode/settings.json.
 > If port `8000` is busy, change  "mkdocs.port": 8080.
 
 Edit any Markdown file in the `docs/` folder—changes appear instantly!
