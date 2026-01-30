@@ -13,4 +13,4 @@ At Respellion, we believe in taking good care of our team. Below is a summary of
 - **Disability Insurance (WIA):** Respellion has taken out WIA insurance for all employees. This insurance limits the drop in income in the event of long-term disability (longer than 2 years). The costs for this insurance are fully covered by Respellion.
 - **Mobile Phone Allowance:** You receive a monthly allowance of **€ 35** for the use and potential purchase of a mobile phone.
 
-[Back to home](index.md)
+

@@ -23,9 +23,7 @@ Here are a few topics for the first few weeks that we will discuss together:
     - Respellion Introduction.pptx
     - Respellion Holacracy
     - Coaching Culture
-- Check the current organizational model on Glassfrogg
+- Check the current organizational model on [Glassfrogg](https://app.glassfrog.com/organizations/32697/orgnav/roles/13886133)
 
- 
+All the necessary information is available via our employee handbook or the internal docs.
 
-All the necessary information is available via SharePoint or Nextcloud.
-[Back to home](index.md)

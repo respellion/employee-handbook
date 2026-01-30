@@ -46,4 +46,4 @@ While our policy is aimed at preventing overtime, it may occur that a client req
 
 We offer the option to have saved hours paid out. It is your own responsibility to indicate in a timely manner if you wish to have saved hours paid out. This aligns with the entrepreneurial attitude we encourage in all our colleagues.
 
-[Back to home](index.md)
+

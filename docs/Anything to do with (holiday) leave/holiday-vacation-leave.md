@@ -128,5 +128,3 @@ We want to be an inclusive organization, so we have the Interchangeable Holiday 
  
 
 If you want to take another day off instead of the regular public holidays, you request a day of leave with “verlofsoort” FEESTDAG.
-
-[Back to home](index.md)

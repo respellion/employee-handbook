@@ -32,4 +32,3 @@ For us, high performance also means working closely with our customers and striv
 We have thought leaders who help organizations with strategic challenges and advice, perform technical analysis, develop tailor-made solutions, and support organizations in making IT decisions.
 
 We specialize in IT architecture, software development, information security, quality assurance, agile management and coaching. Our services consist of interim deployment, but also of result-driven or individual assignments.
-[Back to home](index.md)

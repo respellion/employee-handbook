@@ -128,4 +128,4 @@ The practice has shown that care and work can be combined, as long as it is mana
 Taking this leave will affect the amount of your untaxed allowances such as the home working allowance and possibly internet or telephone allowance.
 
 
-[Back to home](index.md)
+

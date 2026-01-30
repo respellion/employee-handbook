@@ -31,16 +31,16 @@ Indirect personal data can also exist. This refers to data that, when combined w
 
  
 
-Ordinary Personal Data Examples of ordinary personal data include names, file numbers, or contact details. Ensure that access to or viewing of this data is restricted only to individuals for whom it is necessary for their role.
+**Ordinary Personal Data** Examples of ordinary personal data include names, file numbers, or contact details. Ensure that access to or viewing of this data is restricted only to individuals for whom it is necessary for their role.
 
-Special Categories of Personal Data Sensitive data such as a person's race, religion, health, criminal record, and biometric data (e.g., fingerprints) are referred to as special categories of personal data. Processing special categories of personal data is prohibited unless a specific legal exception applies. Consult your designated privacy officer if you use or intend to use this type of data.
+**Special Categories of Personal Data** Sensitive data such as a person's race, religion, health, criminal record, and biometric data (e.g., fingerprints) are referred to as special categories of personal data. Processing special categories of personal data is prohibited unless a specific legal exception applies. Consult your designated privacy officer if you use or intend to use this type of data.
 
-Sensitive Personal Data Some data may not be classified as "special category" by definition but is sensitive enough to warrant extra precautions. This includes data concerning:
+**Sensitive Personal Data** Some data may not be classified as "special category" by definition but is sensitive enough to warrant extra precautions. This includes data concerning:
 
-    * Electronic communications
-    * Location data
-    * Financial data (such as income or purchasing behavior)
-    * Citizen Service Numbers (BSN) / National Identification Numbers
+* Electronic communications
+* Location data
+* Financial data (such as income or purchasing behavior)
+* Citizen Service Numbers (BSN) / National Identification Numbers
 
  
 
@@ -52,4 +52,4 @@ A national identification number is a unique number established by law. In the N
 
 Examples of Dutch laws regulating the use of the BSN include the General Provisions for Citizen Service Number Act (Wet algemene bepalingen burgerservicenummer), the Use of Citizen Service Number in Healthcare Act (Wet gebruik burgerservicenummer in de zorg), and the Personal Identification Numbers in Education Act (Wet persoonsgebonden nummers in het onderwijs).
 
-[Back to home](index.md)
+

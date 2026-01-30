@@ -70,4 +70,4 @@ In our culture, employees trust each other, demonstrate courage and discipline, 
 Our roles are described on Glassfrog.
 
 
-[Back to home](index.md)
+

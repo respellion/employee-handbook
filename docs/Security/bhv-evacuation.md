@@ -2,4 +2,4 @@
 
 Placeholder: evacuation and safety procedures.
 
-[Back to home](index.md)
+

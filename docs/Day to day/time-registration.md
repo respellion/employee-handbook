@@ -31,4 +31,4 @@ You need to register all contract hours, so if you work 36 hours, you register o
 When you are sick, you do not need to register any hours in Exact yourself.
 You must report your sickness to the people officer role, according to the procedure in our absence protocol. The poeple officer will then ensure your sick leave is registered correctly in Exact.
 
-[Back to home](index.md)
+

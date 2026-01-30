@@ -70,4 +70,4 @@ This approach empowers our people with real responsibility, entrepreneurial free
 
 ## References
 
-Blog – Holacracy
+Blog – [Holacracy](https://www.holacracy.org/blog/)

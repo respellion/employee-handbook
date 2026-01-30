@@ -66,4 +66,3 @@ When taking leave, colleagues who can partly perform their own work will have to
 For example: you have a 36-hour contract, and you are 50% incapacitated for work. So you are currently working 18 hours a week, temporarily. Do you want free time during this reintegration? Then you must apply for 36 holiday hours.
 
 
-[Back to home](index.md)
