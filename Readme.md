@@ -55,7 +55,7 @@ Then open your browser to: [http://localhost:8000](http://localhost:8000)
 
 or if you have Docker installed and are using VS Code press **F5**, that will start the container and website.
 
-> 🔍 **Note**: For VS Code we use the port from the settings.json.
+> 🔍 **Note**: For VS Code we use the port from the .vscode/settings.json.
 > If port `8000` is busy, change  "mkdocs.port": 8080.
 
 Edit any Markdown file in the `docs/` folder—changes appear instantly!
