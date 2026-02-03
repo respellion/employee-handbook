@@ -12,11 +12,11 @@ hide:
 
 -   
 
-    ## The beginning
+    ## Who we are
 
-    - ❓ [What does Respellion actually do?](The beginning/what-does-respellion.md)
-    - 👥 [The Respellion model; no management, no job descriptions](The beginning/respellion-model.md)
-    - 🏅 [Our Quality Management System](How we work together/qms-design.md)
+    - ❓ [What does Respellion actually do?](Who we are/what-does-respellion.md)
+    - 👥 [The Respellion model; no management, no job descriptions](Who we are/respellion-model.md)
+    - 🏅 [Our Quality Management System](Who we are/qms-design.md)
 
 
     ## How we work together
@@ -24,9 +24,8 @@ hide:
     - 🔥 [Our purpose](How we work together/our-purpose.md)
     - ❤️ [Our core values and manifest](How we work together/core-values.md)
     - 🤝 [Coaching Culture FAQ](How we work together/coaching-culture-faq.md)
+    - ⚪ [Circles, Huddles and Celebrations](How we work together/circles-huddles-celebrations.md)
     - 🏢 [Office information](How we work together/office-information.md)
-
-
 
     ## Day to day
 
@@ -34,14 +33,10 @@ hide:
     - 🧾 [Time Registration](Day to day/time-registration.md)
     - 😶‍🌫️ [Office Etiquette](Day to day/office-etiquette.md)
     - 🚗 [Travel Time Policy](Day to day/travel-time-policy.md)
-    - 🧭 [Search an assignment](Day to day/search-assignment.md)
-
 
 
     ## Staying up to date
 
-    - ⚪ [Circles, Huddles and Celebrations](Staying up to date/circles-huddles-celebrations.md)
-    - 📝 [Onboarding checklist](Staying up to date/onboarding-checklist.md)
 
 
 - 
