@@ -47,7 +47,7 @@ hide:
 
     - 🦋 [Coaching Culture](Learning & personal development/coaching-culture.md)
     - 👏 [Growth & Reward](Learning & personal development/growth-reward.md)
-
+    - 🎓 [Conferences](Learning & personal development/conferences.md)
 
     ## Spending and contracting
 
