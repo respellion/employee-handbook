@@ -60,7 +60,7 @@ Of je nu een toekomstige collega bent of een nieuwsgierige partner: **welkom in 
     ## Pension scheme & Benefits
 
     - 💼 [Secondary employment benefits](Pension scheme & Benefits/secondary-employment-benefits.md)
-    - 🏖️ [Jouw pensioen](Pension scheme & Benefits/jouw-pensioen.md)
+    - 🏖️ [Your Pension](Pension scheme & Benefits/jouw-pensioen.md)
 
 
     ## Anything to do with (holiday)leave

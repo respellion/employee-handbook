@@ -8,9 +8,9 @@ Below, we explain how your pension is structured.
 
 We utilize a Defined Contribution scheme (beschikbare premieregeling). This means that a fixed amount is invested every month for your future pension pot.
 
-- Pension Provider: a.s.r. Doen Pensioen.
-- Contribution (Premium): 10% of your pensionable salary (pension base) is contributed.
-- Employee Contribution: Based on our calculation models, we apply a split where you as the employee contribute 50% of this premium, and Respellion contributes the remaining 50%.
+- **Pension Provider**: a.s.r. Doen Pensioen.
+- **Contribution** (Premium): 10% of your pensionable salary (pension base) is contributed.
+- E**mployee Contribution**: Based on our calculation models, we apply a split where you as the employee contribute 50% of this premium, and Respellion contributes the remaining 50%.
 
 ## 2. How is the contribution calculated?
 
