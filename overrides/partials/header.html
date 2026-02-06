@@ -1,0 +1,131 @@
+<!--
+  Copyright (c) 2016-2025 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Determine classes -->
+{% set class = "md-header" %}
+{% if "navigation.tabs.sticky" in features %}
+{% set class = class ~ " md-header--shadow md-header--lifted" %}
+{% elif "navigation.tabs" not in features %}
+{% set class = class ~ " md-header--shadow" %}
+{% endif %}
+
+<!-- Header -->
+<header class="{{ class }}" data-md-component="header">
+    <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
+
+        <!-- Link to home -->
+        <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}"
+            class="md-header__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
+            {% include "partials/logo.html" %}
+        </a>
+
+        <!-- Button to open drawer -->
+        <label class="md-header__button md-icon" for="__drawer">
+            {% set icon = config.theme.icon.menu or "material/menu" %}
+            {% include ".icons/" ~ icon ~ ".svg" %}
+        </label>
+
+
+        <svg style="height: 48px;" viewBox="0 0 175 48" xmlns="http://www.w3.org/2000/svg"
+            class="styles_site-header__logo__Pe6E2" aria-label="Respellion logo, naar home" data-color-variant="dark"
+            data-animate-state="large">
+            <path data-element="svg-text" class="styles_logo__svg-text__I6SQH"
+                d="M29.3858 15.8817V17.4387H25.8047C22.6284 17.4387 20.5109 19.5563 20.5109 22.7326V35.5H18.9539V15.8817H29.3858ZM32.3465 35.5V15.8817H40.9101C44.0864 15.8817 46.2039 17.9993 46.2039 21.1756C46.2039 24.3518 44.0864 26.4694 40.9101 26.4694H37.4846C35.2426 26.4694 33.7478 27.9641 33.7478 30.2062C33.7478 32.4483 35.2426 33.943 37.4846 33.943H43.7127V35.5H32.3465ZM37.4846 17.4387C35.2426 17.4387 33.7478 18.9335 33.7478 21.1756C33.7478 23.4176 35.2426 24.9124 37.4846 24.9124H40.9101C43.1521 24.9124 44.6469 23.4176 44.6469 21.1756C44.6469 18.9335 43.1521 17.4387 40.9101 17.4387H37.4846ZM53.9926 26.4694C50.8163 26.4694 48.6987 24.3518 48.6987 21.1756C48.6987 17.9993 50.8163 15.8817 53.9926 15.8817H61.6219V17.4387H53.9926C51.7505 17.4387 50.2557 18.9335 50.2557 21.1756C50.2557 23.4176 51.7505 24.9124 53.9926 24.9124H61.6219V35.5H51.1899V33.943H56.4838C58.7259 33.943 60.2206 32.4483 60.2206 30.2062C60.2206 27.9641 58.7259 26.4694 56.4838 26.4694H53.9926ZM73.7763 35.5H71.5964C69.5412 35.5 68.171 36.8702 68.171 38.9254V42.6622H66.614V15.8817H73.7763C78.0736 15.8817 80.9385 18.7466 80.9385 23.044V28.3378C80.9385 32.6351 78.0736 35.5 73.7763 35.5ZM79.3815 23.044C79.3815 19.6808 77.1394 17.4387 73.7763 17.4387C70.4131 17.4387 68.171 19.6808 68.171 23.044V28.3378C68.171 31.7009 70.4131 33.943 73.7763 33.943C77.1394 33.943 79.3815 31.7009 79.3815 28.3378V23.044ZM85.7506 35.5V15.8817H94.3141C97.4904 15.8817 99.6079 17.9993 99.6079 21.1756C99.6079 24.3518 97.4904 26.4694 94.3141 26.4694H90.8887C88.6466 26.4694 87.1519 27.9641 87.1519 30.2062C87.1519 32.4483 88.6466 33.943 90.8887 33.943H97.1167V35.5H85.7506ZM90.8887 17.4387C88.6466 17.4387 87.1519 18.9335 87.1519 21.1756C87.1519 23.4176 88.6466 24.9124 90.8887 24.9124H94.3141C96.5562 24.9124 98.0509 23.4176 98.0509 21.1756C98.0509 18.9335 96.5562 17.4387 94.3141 17.4387H90.8887ZM105.061 8.71951V35.5H103.504V8.71951H105.061ZM111.905 8.71951V35.5H110.348V8.71951H111.905ZM119.527 8.71951V11.8335H116.101V8.71951H119.527ZM118.592 15.8817V35.5H117.035V15.8817H118.592ZM130.426 15.4146C134.91 15.4146 137.899 18.4041 137.899 22.8883V28.4935C137.899 32.9777 134.91 35.9671 130.426 35.9671C125.942 35.9671 122.952 32.9777 122.952 28.4935V22.8883C122.952 18.4041 125.942 15.4146 130.426 15.4146ZM136.342 28.4935V22.8883C136.342 19.3383 133.976 16.9716 130.426 16.9716C126.876 16.9716 124.509 19.3383 124.509 22.8883V28.4935C124.509 32.0434 126.876 34.4101 130.426 34.4101C133.976 34.4101 136.342 32.0434 136.342 28.4935ZM149.099 15.8817C153.272 15.8817 155.95 18.5598 155.95 22.7326V35.5H154.393V22.7326C154.393 19.494 152.337 17.4387 149.099 17.4387C145.86 17.4387 143.805 19.494 143.805 22.7326V35.5H142.248V15.8817H149.099Z">
+            </path>
+            <path data-element="left-bracket" class="styles_logo__brackets__q5AoH"
+                d="M14.3743 8.70702C11.5232 8.70702 9.62247 10.6078 9.62247 13.4589V39.594C9.62247 42.4451 11.5232 44.3458 14.3743 44.3458H18.8094V46.2466H14.3743C10.3748 46.2466 7.72174 43.5934 7.72174 39.594V32.2286C7.72174 29.3775 5.821 27.4768 2.9699 27.4768H0.791973V25.5761H2.9699C5.821 25.5761 7.72174 23.6753 7.72174 20.8242V13.4589C7.72174 9.4594 10.3748 6.80629 14.3743 6.80629H18.8094V8.70702H14.3743Z">
+            </path>
+            <path data-element="right-bracket" class="styles_logo__brackets__q5AoH"
+                d="M160.357 8.70702H155.883V6.80629H160.357C164.317 6.80629 166.97 9.4594 166.97 13.4589V20.8242C166.97 23.6753 168.871 25.5761 171.722 25.5761H173.9V27.4768H171.722C168.871 27.4768 166.97 29.3775 166.97 32.2286V39.594C166.97 43.5934 164.317 46.2466 160.357 46.2466H155.883V44.3458H160.357C163.209 44.3458 165.109 42.4451 165.109 39.594V13.4589C165.109 10.6078 163.209 8.70702 160.357 8.70702Z">
+            </path>
+        </svg>
+
+        <!-- Header title -->
+        <div class="md-header__title" data-md-component="header-title">
+            <div class="md-header__ellipsis">
+                <div class="md-header__topic">
+
+                    <span class="md-ellipsis">
+
+                        {{ config.site_name }}
+                    </span>
+                </div>
+                <div class="md-header__topic" data-md-component="header-topic">
+                    <span class="md-ellipsis">
+                        {% if page.meta and page.meta.title %}
+                        {{ page.meta.title }}
+                        {% else %}
+                        {{ page.title }}
+                        {% endif %}
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Color palette toggle -->
+        {% if config.theme.palette %}
+        {% if not config.theme.palette is mapping %}
+        {% include "partials/palette.html" %}
+        {% endif %}
+        {% endif %}
+
+        <!-- User preference: color palette -->
+        {% if not config.theme.palette is mapping %}
+        {% include "partials/javascripts/palette.html" %}
+        {% endif %}
+
+        <!-- Site language selector -->
+        {% if config.extra.alternate %}
+        {% include "partials/alternate.html" %}
+        {% endif %}
+
+        <!-- Button to open search modal -->
+        {% if "material/search" in config.plugins %}
+        {% set search = config.plugins["material/search"] | attr("config") %}
+
+        <!-- Check if search is actually enabled - see https://t.ly/DT_0V -->
+        {% if search.enabled %}
+        <label class="md-header__button md-icon" for="__search">
+            {% set icon = config.theme.icon.search or "material/magnify" %}
+            {% include ".icons/" ~ icon ~ ".svg" %}
+        </label>
+
+        <!-- Search interface -->
+        {% include "partials/search.html" %}
+        {% endif %}
+        {% endif %}
+
+        <!-- Repository information -->
+        {% if config.repo_url %}
+        <div class="md-header__source">
+            {% include "partials/source.html" %}
+        </div>
+        {% endif %}
+    </nav>
+
+    <!-- Navigation tabs (sticky) -->
+    {% if "navigation.tabs.sticky" in features %}
+    {% if "navigation.tabs" in features %}
+    {% include "partials/tabs.html" %}
+    {% endif %}
+    {% endif %}
+</header>
