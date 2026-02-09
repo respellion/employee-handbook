@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Ball Pill";
+    src: url(../fonts/BallPill-light.woff);
+}
+
 .two-col {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -58,11 +63,111 @@ h2 {
     /* Reset unintended spacing */
 }
 
+/* Logo expand animation - smooth slide out */
+@keyframes expandLogo {
+    0% {
+        max-width: 0;
+        opacity: 0;
+    }
 
-.styles_logo__svg-text__I6SQH {
-    fill: #ece9e9;
+    100% {
+        max-width: 10rem;
+        opacity: 1;
+    }
 }
 
-.styles_logo__brackets__q5AoH {
-    fill: #CDD8BB;
+/* Logo collapse animation - smooth slide in */
+@keyframes collapseLogo {
+    0% {
+        max-width: 10rem;
+        opacity: 1;
+    }
+
+    100% {
+        max-width: 0;
+        opacity: 0;
+    }
+}
+
+
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+    font-family: 'Ball Pill', Georgia, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: var(--theme-text-color);
+}
+
+@media (min-width: 40rem) {
+    .logo {
+        font-size: 1.575rem;
+    }
+}
+
+@media (min-width: 60rem) {
+    .logo {
+        /* font-size: 2.1875rem; */
+        width: 15rem;
+    }
+}
+
+.logo:hover {
+    opacity: 0.85;
+}
+
+.logo-bracket {
+    color: #CDD8BB;
+    /* color: #5c1dd8; */
+    font-weight: 600;
+}
+
+.logo-text {
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-text-short {
+    display: inline-block;
+}
+
+.logo-text-full {
+    display: none;
+}
+
+@media (min-width: 60rem) {
+    .logo-text-full {
+        display: inline-block;
+        max-width: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-width 0.6s ease, opacity 0.4s ease;
+    }
+
+    .logo-animated .logo-text-full {
+        animation: expandLogo 0.8s ease-in-out 0.3s forwards;
+    }
+
+    .logo-expanded .logo-text-full {
+        max-width: 10rem;
+        opacity: 1;
+        animation: none;
+    }
+
+    .logo-collapsing .logo-text-full {
+        animation: collapseLogo 0.8s ease-in-out 1s forwards;
+    }
+
+    .logo-re-expanding .logo-text-full {
+        animation: expandLogo 0.8s ease-in-out 2.5s forwards;
+    }
+
+    .logo:hover .logo-text-full {
+        max-width: 10rem;
+        opacity: 1;
+    }
 }
