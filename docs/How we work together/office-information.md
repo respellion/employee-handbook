@@ -10,8 +10,8 @@ The meeting rooms on the first floor can be reserved via The Hague Tech.
 
 ## Contact information
 **Address:**  
-Waldorpstraat 5
-2521 CA 's Gravenhage
+Waldorpstraat 5  
+2521 CA 's Gravenhage  
 Nederland  
 
 **E-mail:**  
