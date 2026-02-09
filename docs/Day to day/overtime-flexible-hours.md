@@ -19,7 +19,7 @@ We understand that you may need flexibility. Therefore, it is possible to manage
 <!-- Blank -->
 **1. Accrual:**  
      At the beginning of each month, the overtime hours from the previous month are manually added to your TfT balance. You will see this as a separate balance in your leave administration.  
-**2. Taking Leave:**
+**2. Taking Leave:**  
      - Go to **Leave Registration** in Exact.  
      - Click on **"Create leave registration"**.  
      - Select your own name.  
