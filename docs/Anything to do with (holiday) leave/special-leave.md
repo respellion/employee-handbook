@@ -2,7 +2,7 @@
 
 ## Vacation leave 
 
-Please see 🏝️Holiday and vacation leave
+Please see 🏝️[Holiday and vacation leave](https://employeehandbook.respellion.nl/Anything%20to%20do%20with%20%28holiday%29%20leave/holiday-vacation-leave/)
 
  
 ## Study leave
@@ -25,7 +25,7 @@ Employees with a permanent contract have the option of applying for unpaid leave
 - Up to one month of the unpaid leave, employer will keep paying for pension scheme. After one month pension scheme will not be paid, until the employee resumes his daily work.
 - In case of a longer period of unpaid leave, you will not receive a travel allowance (nor an internet allowance and other related allowances).
 - Taking unpaid leave could affect your annual salary raise
-- Suppose you choose to take unpaid leave for a duration of two months or more throughout the entire calendar year in addition to your regular holiday leave and purchased holiday leave. In that case, the standard salary raise will not be implemented. As a result, you will not qualify for an annual salary raise if your leave extends for 3.5 months or more, encompassing both paid and unpaid leave periods.
+- Suppose you choose to take unpaid leave for a duration of two months or more throughout the entire calendar year in addition to your regular holiday leave and purchased holiday leave. In that case, the standard salary raise will not be implemented. As a result, you will not qualify for an annual salary raise if your leave extends for 3,5 months or more, encompassing both paid and unpaid leave periods.
 
 ## Special leave for activities and (family) situations
 
@@ -42,7 +42,7 @@ There may be special situations where you are not able to work. The following ar
 | Spouse/partner, relatives by blood or marriage of the 1st degree passing away                                                                                  | From the day of death until the day of the funeral or cremation |
 | Relatives by blood or marriage of the 2nd degree passing away                                                                                                  | 2 days the day of death and the day of the funeral or cremation |
 | Relatives by blood or marriage of the 3rd and 4th degree passing away                                                                                          | The time to attend the funeral or cremation                     |
-| Necessary doctor's visit which cannot take place outside of working hours                                                                                      | Max 8 hours on a yearly basis see explanation                   |
+| Necessary doctor's visit which cannot take place outside of working hours                                                                                      | Max 8 hours on a yearly basis, see explanation below            |
 | 12,5 / 25-year relationship with your partner                                                                                                                  | 1 day                                                           |
 
 
@@ -54,14 +54,14 @@ A doctor's visit means a visit to the doctor, the dentist, a specialist or a the
  
 ## 'Other' Special Leave Situations -non-family
 
-Other personal situations: like loved ones passing away, marriage, the anniversary of non-family members *
+Other personal situations: like loved ones passing away or a marriage or anniversary of non-family members.
 
 Of course, happy or unpleasant things can also happen to non-family members. Therefore, we want to provide leave for these situations. The assessment of whether you want to make use of these days is up to you, but please consult the People Officer role upfront. Some examples: marriage or funeral of a person that is important to you.
 
  
 ## Maternity/ Paternity/ Parental Leave
 
-We have a separate page for 🐥Maternity / Paternity / Parental Leave .
+We have a separate page for 🐥[Maternity / Paternity / Parental Leave](https://employeehandbook.respellion.nl/Anything%20to%20do%20with%20%28holiday%29%20leave/parental-leave/).
 
  
 ## Emergency leave, short-term and long-term care related leave
