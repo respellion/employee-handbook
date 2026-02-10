@@ -9,15 +9,15 @@ Your impact—and therefore your potential salary growth—is measured based on 
 
 The pillars and their specific weighting are as follows:
 
-- A. **Basic Experience & Expertise (Weighting: 100%):** Your fundamental professional knowledge and skills.
+**A. Basic Experience & Expertise (Weighting: 100%):** Your fundamental professional knowledge and skills.
 
-- B. **Role Fulfilment & Responsibility (Weighting: 75%):** How much ownership do you show in your Holacratic roles?
+**B. Role Fulfilment & Responsibility (Weighting: 75%):** How much ownership do you show in your Holacratic roles?
 
-- C. **Impact & Results (Weighting: 80%):** The tangible value you deliver for clients and our purpose.
+**C. Impact & Results (Weighting: 80%):** The tangible value you deliver for clients and our purpose.
 
-- D. **Development & Learning Curve (Weighting: 100%):** Your growth on intellectual, emotional and physical levels (linked to your Personal Development Plan).
+**D. Development & Learning Curve (Weighting: 100%):** Your growth on intellectual, emotional and physical levels (linked to your Personal Development Plan).
 
-- E. **Culture & Collaboration (Weighting: 80%):** Your contribution to the team, living our values, and 'working with a smile'.
+**E. Culture & Collaboration (Weighting: 80%):** Your contribution to the team, living our values, and 'working with a smile'.
 
  
 
