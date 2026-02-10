@@ -10,23 +10,23 @@ The sickness and absence policy is made in respect of the employees on leave and
 
 According to the (in Dutch) Wet Verbetering Poortwachter (WVP), the employee and employer are jointly responsible for resuming work as quickly as possible in the event of incapacity for work due to illness. 
 
-We will briefly explain a few points below. The extensive document can be found here: Absenteeism Protocol
+We will briefly explain a few points below. We have a separate Absenteeism Protocol that describes this more extensively.
 
  
 ## Reporting sick
 
-If you want to call in sick, you can report sick in the morning at the people officer role between 8:30 and 9:00. During the phone call, this colleague will ask you when you think you will be better and discuss what you are working on and what may need to be transferred. This colleague will communicate your absence in Microsoft Teams.
+If you want to call in sick, you can contact the people officer role by phone in the morning between 8:30 and 9:00. During the phone call, this colleague will ask you when you think you will be better and discuss what you are working on and what may need to be transferred. The people office role will communicate your absence in Microsoft Teams.
 
  
 
-If you become ill during the working day and want to go home, you report this personally to the role people officer. When you are recovered, we kindly ask you to call the role people officer. 
+If you become ill during the working day and want to go home, report this personally to the people officer role. When you have recovered, we kindly ask you to call the role people officer. 
 
  
 ## During your sickness
 
 When you are sick, make sure you are available on your phone so that we or the external health service (Arbodienst) can reach you. We will keep in touch to hear how you're doing. When your nursing address changes, you must also inform us.
 
-The Gatekeeper Improvement Act sets out the efforts we both need to make to speed up your recovery. In the Absenteeism Rules, see the link above, you can find more about this. Read this at least when you are sick.
+The "Wet Verbetering Poortwachter" sets out the efforts both you and Respellion need to make to speed up your recovery. In the Absenteeism Protocol you can find more information about this. Make sure you read this when you are sick.
 
  
 ## Company doctor
@@ -37,7 +37,7 @@ If you are sick for approx. five days, the Medical Case manager of the Health an
 
 When you have been ill for (almost) 6 weeks, a next appointment will be scheduled. This appointment will be held so that a Problem Analysis can be made. A written report will follow, ask the contact person at GOED for log-in details so you can view the Problem Analysis.
 
-Do you dread it? Don’t worry, all these steps are here to help/support you! Feel free to contact the People Officer when you are nervous about this. Together you can prepare for this conversation, so any doubts or insecurities can be addressed before the scheduled appointment with the Medical Case manager of the Health and Safety Provider named GOED.
+Do you dread it? Don’t worry, all these steps are here to help/support you! Feel free to contact the People Officer when you are nervous about this. Together you can prepare for this conversation, so any doubts or insecurities can be addressed before this scheduled appointment with the Medical Case manager of the Health and Safety Provider named GOED.
 
  
 
@@ -56,7 +56,7 @@ If you become ill during your holiday, you must inform us as soon as possible, i
  
 ## On holiday during illness
 
-If you want to take time off during the period of illness, to go on holiday, you do so in consultation. Sometimes you will need a 'statement of no objection' from the occupational health and safety service. With this statement, you will submit a request to be allowed to go on holiday. We will decide whether to grant the holiday. Your holiday should never be an obstacle to your recovery.
+If you want to take time off during the period of illness, to go on holiday, you do so in consultation. Sometimes you will need a 'statement of no objection' from the occupational health and safety service. With this statement, you can submit a request to be allowed to go on holiday. We will decide whether to grant the holiday. Your holiday should never be an obstacle to your recovery.
 
  
 ## Taking leave during reintegration
