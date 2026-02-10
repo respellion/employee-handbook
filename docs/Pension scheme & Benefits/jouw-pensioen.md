@@ -6,22 +6,20 @@ Below, we explain how your pension is structured.
 
 ## 1. The Basis: Defined Contribution Scheme
 
-We utilize a Defined Contribution scheme (beschikbare premieregeling). This means that a fixed amount is invested every month for your future pension pot.
+We utilize a Defined Contribution scheme (beschikbare premieregeling). This means that a fixed amount is invested every month for your future pension.
 
 - **Pension Provider**: a.s.r. Doen Pensioen.
 - **Contribution** (Premium): 10% of your pensionable salary (pension base) is contributed.
-- E**mployee Contribution**: Based on our calculation models, we apply a split where you as the employee contribute 50% of this premium, and Respellion contributes the remaining 50%.
+- **Employee Contribution**: Based on our calculation models, we apply a split where you as the employee contribute 50% of this premium and Respellion contributes the remaining 50%.
 
 ## 2. How is the contribution calculated?
 
 You do not build up a pension over your entire salary because you will also receive AOW (state pension) from the government later in life. The portion of your salary over which you do build up a pension is called the pension base (pensioengrondslag).
 
 - **Franchise** (Threshold): This is the part of your salary over which you do not build up a pension. For 2026, this is set at **€19,172.00**.
-- **Maximum Salary**: Pension is built up on salary up to a maximum of **€137,800.00**.
-- Calculation Example: Salary: €69,172
-  - Franchise: - €19,172
-  - Pension Base: €50,000
-  - Total Annual Contribution (10%): €5,000
+- **Maximum Salary:** Pension is built up on salary up to a maximum of **€137,800.00**.
+- **Calculation Example:** Is your salary: €69,172? Then, with the Threshold (Franchise) in 2026 being €19,172, your Pension Base will be: €50,000 (€69,172 minus €19,172). And your annual contribution (10%) will then be: €5,000.
+
 
 ## 3. Investing via Life Cycles
 
@@ -42,6 +40,6 @@ In addition to saving for later, insurance is built-in for unforeseen situations
 
 ## 5. Flexibility and Insight
 
-You have direct influence over your own pension:
-- **Extra Savings**: If you want to build up more pension, you may voluntarily make additional contributions up to the fiscal maximum.
+You have direct influence over your own pension:  
+- **Extra Savings**: If you want to build up more pension, you may voluntarily make additional contributions up to the fiscal maximum.  
 - **Portal**: Through the 'Doen Pensioen' dashboard, you have 24/7 insight into your current accrual, returns, and the ability to submit your preferences.
