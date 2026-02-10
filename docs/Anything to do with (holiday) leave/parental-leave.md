@@ -1,6 +1,6 @@
 # Parental leave
 
-This policy document outlines the parental leave entitlements for Respellion. The policy is aligned with the current Dutch regulations as stipulated in the Work and Care Act (Wet Arbeid en Zorg). 
+This policy document outlines the parental leave entitlements for Respellion. The policy is aligned with the current Dutch regulations as stipulated in the Work and Care Act (Wet Arbeid en Zorg).  
 
 # Maternity Leave
 ## Entitlement
@@ -9,8 +9,8 @@ Female employees are entitled to 16 weeks of fully paid maternity leave. For mul
 
 ## Breakdown of Maternity Leave
 
-- Pregnancy Leave (Zwangerschapsverlof): 4-6 weeks before the expected due date
-- Maternity Leave (Bevallingsverlof): 10-12 weeks after ## childbirth
+- Pregnancy Leave (Zwangerschapsverlof): 4-6 weeks before the expected due date.
+- Maternity Leave (Bevallingsverlof): 10-12 weeks after childbirth.
 
 ## Important Points
 
@@ -21,7 +21,7 @@ Female employees are entitled to 16 weeks of fully paid maternity leave. For mul
 - If the baby is hospitalized immediately after birth, maternity leave starts the day after the mother and baby leave the hospital.
 - During maternity leave, employees receive 100% of their salary.
 - Employees must inform their employer about their intention to take maternity leave at least 3 weeks in advance.
-- Holiday hours continue to accrue during maternity leave.
+- Holiday hours continue to accrue during maternity leave.  
 
 # Partner/Paternity Leave
 ## Entitlement
@@ -29,7 +29,7 @@ Female employees are entitled to 16 weeks of fully paid maternity leave. For mul
 Partners (including same-sex partners) of women who have given birth are entitled to:
 
 - 1 week (5 working days) of fully paid birth leave (geboorteverlof)
-- 5 weeks of additional birth leave (aanvullend geboorteverlof) at 70% of their salary
+- 5 weeks of additional birth leave (aanvullend geboorteverlof) at 70% of their salary  
 
 # Important Points
 
@@ -39,7 +39,7 @@ Partners (including same-sex partners) of women who have given birth are entitle
 - To take the additional leave, employees must submit a request via the regular leave request procedure at least 4 weeks in advance.
 - Employers can only adjust the timing if the leave would cause serious organizational problems, and must finalize any changes no later than 2 weeks before the scheduled leave.
 - During the additional leave, the UWV pays 70% of the employee's salary (up to the maximum daily wage).
-- Holiday hours continue to accrue during partner leave.
+- Holiday hours continue to accrue during partner leave.  
 
 # Parental Leave
 ## General Information
@@ -66,7 +66,7 @@ Partners (including same-sex partners) of women who have given birth are entitle
 - This benefit is applied for by the employer to the UWV and the salary is adjusted accordingly.
 - The benefit can only be applied for entire work weeks.
 - Vacation hours are accumulated over the paid parental leave.
-- All other conditions that apply to unpaid parental leave also apply to paid parental leave.
+- All other conditions that apply to unpaid parental leave also apply to paid parental leave.  
 
 # Application Process
 ## For Maternity Leave
