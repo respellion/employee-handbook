@@ -12,7 +12,7 @@ We trust our team members to make sensible decisions about company expenses. Thi
 1. Spend company money as if it were your own
 1. Recurring items are monitored
 1. Submit expenses within 30 days
-1. Always upload clear photos of original receipts in our Expense App
+1. Always upload clear photos of original receipts in [NMBRS](https://www.nmbrs.com/nl/inloggen)
 1. Choose the right “Type/Soort” and the right "Description/Beschrijving"
 
 ## Request for asset expenses
@@ -23,7 +23,7 @@ The administration for these assets is available: Books and Subscriptions
 
 ## Expense Categories
 
-The following expenses are suitable for expense declarations. The information within brackets is necessary in the Expense App for correct administration of the costs.  
+The following expenses are suitable for expense declarations. The information within brackets is necessary in [NMBRS](https://www.nmbrs.com/nl/inloggen) for correct administration of the costs.  
 
 ### Travel
 
@@ -55,7 +55,7 @@ The following expenses are suitable for expense declarations. The information wi
 
 ## Submission Process
 
-1. Use our expense app (Expense App)
+1. Use our expense app ([NMBRS](https://www.nmbrs.com/nl/inloggen))
 2. Upload clear receipt photos
 3. Add clear description as described in this policy
 4. Submit within 30 days
