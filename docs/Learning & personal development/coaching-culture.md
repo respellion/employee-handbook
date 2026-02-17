@@ -35,7 +35,8 @@ Our approach to development encompasses three key areas:
 
  
 
-Check our Miro Board with all personal maps: Personal Maps - Miro
+All the personal development plans are accessible for all colleagues in a Miro board.
+
 
 
 
