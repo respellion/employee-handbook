@@ -1,5 +1,5 @@
 # PaperCut Hives
-We can print documents with the PaperCut Hive service whoch requires to create an account. This system will handle all your printing. PaperCut will guide you through the setup process, but here’s a quick overview:
+We can print documents with the PaperCut Hive service which requires to create an account. This system will handle all your printing. PaperCut will guide you through the setup process, but here’s a quick overview:
 
 ## From your computer:
 Once you’ve created your account, you’ll access the User Portal. Under the Home tab, you’ll see your Access Code. When you print something from your computer, you can use this code directly on the printer to view and release your print jobs.
@@ -11,4 +11,4 @@ You can also print from your mobile device! Download the app (the link is also u
 
 For more detailed instructions, check the “How to print” section in the User Portal.
 
-If something doesn’t work or you get stuck, don’t worry just reach out to someone from the THT team and they’ll help you out.
+If something doesn’t work or you get stuck, don’t worry, just reach out to someone from the THT team and they’ll help you out.
