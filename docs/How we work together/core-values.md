@@ -7,12 +7,12 @@ We have four core values which form the basis for our organization, the cooperat
  
 **1 - Trust**
 
-We give trust by allowing room for autonomy. We trust another and are open and transparent. That’s why we talk with another instead of about the other person. We have faith in someone else’s intentions, assume the right and express that trust. Everyone can rely on each other, and we stand for results.
+We give trust by allowing room for autonomy. We trust each other and are open and transparent. That’s why we talk with each other instead of about each other. We have faith in someone else’s intentions, assume these to be right and express that trust. Everyone can rely on each other, and we stand for results.
 
  
 **2 - Courage**
 
-We have courage and dare to deviate from the traditional way of working when we see things we can improve. It’s okay to make mistakes. In this way, we learn to do (even) better. We dare to make ourselves vulnerable and welcome feedback. We like to do things differently. That makes us a bit rebellious, but we always have good reasoning.
+We have courage and dare to deviate from the traditional way of working when we see things we can improve. It’s okay to make mistakes. In this way, we learn to do (even) better. We dare to make ourselves vulnerable and welcome feedback. We like to do things differently. That makes us a bit rebellious, but we'll always have a good reason for it.
 
  
 **3 - Self-discipline**
@@ -22,10 +22,11 @@ We make clear agreements and honour them. We take responsibility for our activit
  
 **4 - Entrepreneurship**
 
-We are committed and driven entrepreneurs who think in terms of opportunities and possibilities. For our environment and for ourselves. Because things will change, we are flexible and critical. When we tackle something, we do it with both hands and we feel responsible for the result.
+We are committed and driven entrepreneurs who think in terms of opportunities and possibilities. For our environment and for ourselves. Because things will change, we are flexible and critical. When we tackle something, we do it with both hands and we feel responsible for the result.  
+
 
  
-**Repellion manifest**
+## Respellion manifest
 
 Our values are ultimately expressed in behaviour, which is why we have formulated four statements that our customers can hold us accountable for. "Practice what you preach" is very important to us.
 
