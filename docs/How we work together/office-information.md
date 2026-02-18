@@ -15,7 +15,7 @@ Waldorpstraat 5
 Nederland  
 
 **E-mail:**  
-Patrick Smulders (ps@respellion.nl) or Raymond verhoef (rve@respellion.nl)  
+Patrick Smulders (ps@respellion.nl) or Raymond Verhoef (rve@respellion.nl)  
 
 
 **Telephone:**  
