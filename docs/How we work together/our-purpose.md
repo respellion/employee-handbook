@@ -12,8 +12,8 @@ Respellion provides high-performing and flexible professionals and coaches who u
 
  
 
-Respellion is an organization that has knowledge and experience about technology and organisation. We have a vision of how digital solutions can best be developed technically and how this should be approached from an organisational point of view. This combination is exceptionally strong.
+Respellion is an organisation that has knowledge and experience about technology and organisation. We have a vision of how digital solutions can best be developed technically and how this should be approached from an organisational point of view. This combination is exceptionally strong.
 
  
 
-Read more about our knowledge areas on the website.
+Read more about our knowledge areas on our website.
