@@ -3,7 +3,7 @@
 At Respellion, we strive for a sustainable and healthy work-life balance. This aligns directly with our core value of Self-Discipline. We trust that as a professional, you take personal responsibility for maintaining healthy working hours. These guidelines provide a framework to facilitate flexibility, protect you, and simultaneously offer the autonomy that fits our culture. In exceptional cases, there is always the opportunity to discuss possibilities.
 ## 1. Framework for flexibility and saving hours (Employee's Choice)
 
-We understand that you may need flexibility. Therefore, it is possible to manage your contract hours flexibly within a month or to work extra hours to save for time off at a later moment. There is no obligation to use these saved hours within a specific period.
+We understand that you may need flexibility. Therefore, it is possible to manage your contract hours flexibly within a month or so to work extra hours to save for time off at a later moment. There is no obligation to use these saved hours within a specific period.
 
 
 <!-- Blank -->
@@ -18,7 +18,7 @@ We understand that you may need flexibility. Therefore, it is possible to manage
 
 <!-- Blank -->
 **1. Accrual:**  
-     At the beginning of each month, the overtime hours from the previous month are manually added to your TfT balance. You will see this as a separate balance in your leave administration.  
+     At the beginning of each month, the overtime hours from the previous month are manually added to your TfT balance. You can see this as a separate balance in your leave administration.  
 **2. Taking Leave:**  
      - Go to **Leave Registration** in Exact.  
      - Click on **"Create leave registration"**.  
