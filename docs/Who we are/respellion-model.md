@@ -35,14 +35,14 @@ Respellion operates with:
 
 - One organizational circle
 - Monthly tactical and governance meetings (Fridays)
-- A Huddle check-in meetings per week
-- A Huddle Elevator session each two months
+- A Huddle check-in meeting per week
+- A Huddle Elevator session every two months
 - A task board for tracking work
 - Microsoft Loop for administration and meeting notes  
 
 
 ## Meeting Structure
-All meetings are administered in Microsoft Loop
+All meetings are administered in Microsoft Loop.
 
 ### Tactical Meetings
 
@@ -55,11 +55,11 @@ All meetings are administered in Microsoft Loop
 - Focus on evolving the organizational structure
 - Create, modify, or remove roles based on emerging needs
 - Follow a structured process to address tensions through role changes
-- Meeting notes are administered on Governance Meeting Notes
+- Meeting notes are administered in Governance Meeting Notes
 
 ## The Concept of Tension
 
-A tension represents an opportunity for improvement—a gap between current reality and potential. Tensions can be resolved by:
+A tension represents an opportunity for improvement—a gap between current reality and potential reality. Tensions can be resolved by:
 
 - Providing information
 - Creating new roles
