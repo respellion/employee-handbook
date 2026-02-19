@@ -3,7 +3,7 @@
   become: yes
   gather_facts: yes
   vars:
-    ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+    ansible_ssh_common_args: "-o StrictHostKeyChecking=no"
     # Default environment is staging if not provided
     env: "{{ env | default('staging') }}"
 
@@ -53,6 +53,16 @@
       ansible.posix.synchronize:
         src: ./
         dest: "{{ dest_dir }}/"
+        rsync_opts:
+          - "--exclude=.git"
+          - "--exclude=.gitignore"
+          - "--exclude=.vscode"
+          - "--exclude=__pycache__/"
+          - "--exclude=*.pyc"
+          - "--exclude=.DS_Store"
+          - "--exclude=*.log"
+          - "--exclude=node_modules/"
+          - "--exclude=.env"
 
     - name: Start services with Docker Compose
       community.docker.docker_compose_v2:
