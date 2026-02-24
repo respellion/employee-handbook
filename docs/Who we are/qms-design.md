@@ -1,108 +1,105 @@
-# Kwaliteitshandboek Respellion (ISO 9001:2015)
-Dit document beschrijft het Kwaliteitsmanagementsysteem (QMS) van Respellion. Ons QMS is ontworpen om maximale waarde te leveren aan onze klanten via "sustainable digitization" zonder onnodige bureaucratie. Wij gebruiken Holacracy als besturingsmodel en Agile/DevOps als operationele standaard.
+# Quality Manual (QMS) Respellion (ISO 9001:2015)
+This document describes the Quality Management System (QMS) of Respellion. Our QMS is designed to deliver maximum value to our customers through "sustainable digitization" without unnecessary bureaucracy. We use Holacracy as a governance model and Agile/DevOps as an operational standard.
 
-## ISO9001:2015 hoofdstukken
-### 4. Context van de organisatie
-#### 4.1 Inzicht in de organisatie en haar context
-Respellion opereert op het snijvlak van open-source technologie en maatschappelijke impact. Onze context wordt bepaald door de noodzaak voor veilige, schaalbare en duurzame digitale oplossingen.
-Documentatie: Manifesto, Company Report.
-Review: Jaarlijks tijdens een strategische Governance sessie van de General Board Circle.
+## ISO9001:2015 Chapters
+### 4. Context of the Organization
+#### 4.1 Understanding the Organization and Its Context
+Respellion operates at the intersection of open-source technology and societal impact. Our context is determined by the need for safe, scalable, and sustainable digital solutions. Documentation: Manifesto, Company Report. 
+Review: Annually during a strategic governance session of the General Board Circle.
 
-#### 4.2 Belanghebbenden en hun behoeften
-Wij identificeren onze belanghebbenden (klanten, medewerkers/rollen, overheid, partners) via onze cirkelstructuur.
-Implementatie: Rollen en hun 'accountabilities' in Glassfrog definiëren de verantwoordelijkheden naar belanghebbenden.
-Bewijslast: Glassfrog governance overzicht.
+#### 4.2 Stakeholders and Their Needs
+We identify our stakeholders (customers, employees/roles, government, partners) through our circle structure. 
+Implementation: Roles and their 'accountabilities' in Glassfrog define responsibilities towards stakeholders. 
+Evidence: Glassfrog governance overview.
 
-#### 4.3 Toepassingsgebied (Scope)
-Het QMS is van toepassing op:
-"Het ontwerpen, ontwikkelen, implementeren en onderhouden van op maat gemaakte softwareoplossingen en het leveren van consultancy op het gebied van digitalisering en open-source technologie."
+#### 4.3 Scope
+The QMS applies to: "The design, development, implementation, and maintenance of customized software solutions and the provision of consultancy in the field of digitization and open-source technology."
 
-#### 4.4 Kwaliteitsmanagementsysteem en processen
-Onze processen zijn niet lineair maar cyclisch (Agile). De interactie tussen processen wordt beheerd via Holacracy-overleggen (Tactical & Governance).
+#### 4.4 Quality Management System and Processes
+Our processes are not linear but cyclical (Agile). The interaction between processes is managed through Holacracy meetings (Tactical & Governance).
 
-### 5. Leiderschap
-#### 5.1 Leiderschap en betrokkenheid
-Bij Respellion is leiderschap verdeeld. De rollen Lead Link (strategie/prioritering) en Facilitator (procesbewaking) borgen de focus op kwaliteit.
-Kernwaarden: Trust, Courage, Self-discipline, Entrepreneurship vormen de basis voor kwaliteitsbesef.
+### 5. Leadership
+#### 5.1 Leadership and Commitment
+At Respellion, leadership is distributed. The roles of Lead Link (strategy/prioritization) and Facilitator (process oversight) ensure a focus on quality. Our core values: Trust, Courage, Self-discipline, Entrepreneurship form the basis for quality awareness.
 
-#### 5.2 Kwaliteitsbeleid
-Ons beleid is gericht op "Sustainable Digitization". We committeren ons aan:
-Het voldoen aan klant- en wettelijke eisen.
-Continue verbetering van onze 'rebellious' werkwijze.
-Beveiliging door ontwerp (Secure by Design).
+#### 5.2 Quality Policy
+Our policy is focused on "Sustainable Digitization." We commit to: Meeting customer and legal requirements. Continuous improvement of our 'rebellious' approach. Security by design.
 
-#### 5.3 Rollen, verantwoordelijkheden en bevoegdheden
-Conform Holacracy zijn alle rollen, verantwoordelijkheden en bevoegdheden transparant vastgelegd in Glassfrog. Er is geen sprake van hiërarchische functies, maar van dynamische rollen.
+#### 5.3 Roles, Responsibilities, and Authorities
+In accordance with Holacracy, all roles, responsibilities, and authorities are transparently documented in Glassfrog. There are no hierarchical positions, only dynamic roles.
 
 ### 6. Planning
-#### 6.1 Risico's en kansen
-Risicomanagement is bij ons een continu proces, geen jaarlijks document.
-Trigger: Een gevoelde 'Tension' (gat tussen huidige en gewenste situatie).
-Actiehouder: Elke rol binnen de relevante Cirkel.
-Actie: Tension inbrengen in Tactical of Governance meeting.
-Output: Output van de meeting (projecten of governance wijzigingen).
+#### 6.1 Risks and Opportunities
+Risk management is an ongoing process for us, not an annual document. 
+Trigger: A felt 'Tension' (gap between current and desired situation). 
+Action holder: Any role within the relevant Circle. 
+Action: Bring the Tension into a Tactical or Governance meeting. 
+Output: Output of the meeting (projects or governance changes).
 
-#### 6.2 Kwaliteitsdoelstellingen
-Doelstellingen worden per Cirkel gedefinieerd in de vorm van OKR's of Circle Purposes.
-Meting: Voortgang wordt besproken in de maandelijkse Tactical Meetings.
+#### 6.2 Quality Objectives
+Objectives are defined per Circle in the form of OKRs or Circle Purposes. 
+Measurement: Progress is discussed in the monthly Tactical Meetings.
 
-### 7. Ondersteuning
-#### 7.1 en 7.2 Middelen en competenties
-Mensen zijn ons belangrijkste kapitaal.
-Twee keer per jaar vindt een formele review plaats van de ontwikkeling en bijdrage van rollinvullers.
-Huddle Elevator: Coaching en feedbacksessies borgen het kennisniveau.
+### 7. Support
+#### 7.1 and 7.2 Resources and Competencies
+People are our most important capital. 
+A formal review of the development and contribution of role-fillers takes place twice a year. 
+Huddle Elevator: Coaching and feedback sessions ensure knowledge levels.
 
-#### 7.3 Bewustzijn
-Kwaliteitsbewustzijn wordt geborgd door de Onboarding en de wekelijkse Huddle Check-ins.
+#### 7.3 Awareness
+Quality awareness is ensured through Onboarding and weekly Huddle Check-ins.
 
-#### 7.5 Gedocumenteerde informatie
-Wij minimaliseren statische documenten.
-- Broncodes: Git (versiebeheer is bewijslast).
-- Processen: Glassfrog (Governance).
-- Taken: Task Board (Jira/Azure DevOps).
+#### 7.4 Communication
+Communication about the QMS is done during our monthly Tactical meeting. Also we focus a lot on our quality policy and our quality goals during Onboarding process and in our Employee Handbook.
 
-### 8. Uitvoering (Operations)
-#### 8.1 Operationele planning en beheersing
-Wij werken volgens de Agile-methodiek (Scrum/Kanban).
-Kwaliteitsgate: De Definition of Done (DoD) fungeert als de primaire kwaliteitsbeheersing (ISO 9001:8.1). Elke user story moet voldoen aan de DoD (bijv. peer review, automated tests, security scan).
+#### 7.5 Documented Information
+We minimize static documents.
+- Source codes: Git (version control is evidence).
+- Processes: Glassfrog (Governance).
+- Tasks: Task Board (Jira/Azure DevOps).
 
-#### 8.2 Eisen voor producten en diensten
-Trigger: Klantvraag of Request for Proposal.
-Actiehouder: Rol 'Contracting' of 'Product Owner'.
-Output: Getekende offerte of goedgekeurde Backlog items.
+### 8. Execution (Operations)
+#### 8.1 Operational Planning and Control
+We work according to the Agile methodology (Scrum/Kanban). Quality gate: The Definition of Done (DoD) serves as the primary quality control (ISO 9001:8.1). Each user story must meet the DoD (e.g., peer review, automated tests, security scan).
 
-#### 8.3 Ontwerp en ontwikkeling
-Softwareontwikkeling volgt de CI/CD pijplijn.
-Review: Peer reviews (Pull Requests) zijn verplicht voor elke codewijziging (ISO 9001:8.3.4).
-Validatie: User Acceptance Testing (UAT) door de klant vóór release.
+#### 8.2 Requirements for Products and Services
+Trigger: Customer request or Request for Proposal. 
+Action holder: Role 'Contracting' or 'Product Owner'. 
+Output: Signed proposal or approved Backlog items.
 
-#### 8.4 Beheersing van extern geleverde diensten
-Leveranciers (Cloud providers, SaaS tools) worden geselecteerd op basis van security- en duurzaamheidscriteria (ISO 14001 integratie).
+#### 8.3 Design and Development
+Software development follows the CI/CD pipeline. 
+Review: Peer reviews (Pull Requests) are mandatory for every code change (ISO 9001:8.3.4). 
+Validation: User Acceptance Testing (UAT) by the customer before release.
 
-### 9. Evaluatie van de prestaties
-#### 9.1 Monitoring en meting
-Klanttevredenheid: Wordt direct gemeten tijdens Sprint Demo's en via informele feedbackloops.
-Procesprestaties: Velocity en Lead Time in Agile boards.
+#### 8.4 Control of Externally Provided Services
+Suppliers (Cloud providers, SaaS tools) are selected based on security and sustainability criteria (ISO 14001 integration).
 
-#### 9.2 Interne audit
-Wij auditen onszelf continu door de 'Governance' te toetsen aan de realiteit.
-Formele audit: Jaarlijks voert een aangewezen rol buiten de cirkel een check uit op de naleving van de eigen procesafspraken in Glassfrog.
+### 9. Performance Evaluation
+#### 9.1 Monitoring and Measurement
+Customer satisfaction: Measured directly during Sprint Demos and through informal feedback loops. 
+Process performance: Velocity and Lead Time in Agile boards.
 
-#### 9.3 Directiebeoordeling (Management Review)
-Conform Holacracy vervangen wij de klassieke directiebeoordeling door een specifieke Strategische Review in de General Board Circle.
-- Input: Overzicht van Tensions, klantfeedback, financiële status, incidenten.
-- Output: Strategische koerswijzigingen en updates aan het QMS.
+#### 9.2 Internal Audit
+We continuously audit ourselves by testing the 'Governance' against reality. 
+Formal audit: Annually, a designated role outside the circle conducts a check on compliance with its own process agreements in Glassfrog.
 
-### 10. Verbetering
-#### 10.1 Algemeen en 10.2 Afwijkingen
-Fouten zijn leerkansen ("Most Rebellious Failures").
+#### 9.3 Management Review
+In accordance with Holacracy, we replace the classic management review with a specific Strategic Review in the General Board Circle.
+- Input: Overview of Tensions, customer feedback, financial status, incidents.
+- Output: Strategic course changes and updates to the QMS.
+
+### 10. Improvement
+#### 10.1 General and 10.2 Deviations
+Mistakes are learning opportunities ("Most Rebellious Failures").
+* Trigger: A bug, incident, or customer complaint.
+* Action holder: The relevant Role within the Huddle.
+* Action: Root cause analysis during the Retrospective (ISO 9001:10.2).
+* Output: Improvement action on the Backlog or adjustment in the DoD.
 
 
-* Trigger: Een bug, incident of klantklacht.
-* Actiehouder: De betreffende Rol binnen de Huddle.
-* Actie: Oorzaakanalyse tijdens de Retrospective (ISO 9001:10.2).
-* Output: Verbeteractie op de Backlog of aanpassing in de DoD.
+#### 10.3 Continuous Improvement
 
-#### 10.3 Continue verbetering
+Our structure is self-cleaning. By continuously processing Tensions in Governance meetings, the system improves itself every month.
 
-Onze structuur is zelfreinigend. Door het continu verwerken van Tensions in Governance meetings verbetert het systeem zichzelf elke maand.
+
