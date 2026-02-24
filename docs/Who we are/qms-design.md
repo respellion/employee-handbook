@@ -53,9 +53,9 @@ Quality awareness is ensured through Onboarding and weekly Huddle Check-ins.
 Communication about the QMS is done during our monthly Tactical meeting. Also we focus a lot on our quality policy and our quality goals during Onboarding process and in our Employee Handbook.
 
 #### 7.5 Documented Information
-We minimize static documents.
-- Source codes: Git (version control is evidence).
-- Processes: Glassfrog (Governance).
+We minimize static documents.  
+- Source codes: Git (version control is evidence).  
+- Processes: Glassfrog (Governance).  
 - Tasks: Task Board (Jira/Azure DevOps).
 
 ### 8. Execution (Operations)
@@ -85,17 +85,17 @@ We continuously audit ourselves by testing the 'Governance' against reality.
 Formal audit: Annually, a designated role outside the circle conducts a check on compliance with its own process agreements in Glassfrog.
 
 #### 9.3 Management Review
-In accordance with Holacracy, we replace the classic management review with a specific Strategic Review in the General Board Circle.
-- Input: Overview of Tensions, customer feedback, financial status, incidents.
+In accordance with Holacracy, we replace the classic management review with a specific Strategic Review in the General Board Circle.  
+- Input: Overview of Tensions, customer feedback, financial status, incidents.  
 - Output: Strategic course changes and updates to the QMS.
 
 ### 10. Improvement
 #### 10.1 General and 10.2 Deviations
-Mistakes are learning opportunities ("Most Rebellious Failures").
-* Trigger: A bug, incident, or customer complaint.
-* Action holder: The relevant Role within the Huddle.
-* Action: Root cause analysis during the Retrospective (ISO 9001:10.2).
-* Output: Improvement action on the Backlog or adjustment in the DoD.
+Mistakes are learning opportunities ("Most Rebellious Failures").  
+- Trigger: A bug, incident, or customer complaint.  
+- Action holder: The relevant Role within the Huddle.  
+- Action: Root cause analysis during the Retrospective (ISO 9001:10.2).  
+- Output: Improvement action on the Backlog or adjustment in the DoD.
 
 
 #### 10.3 Continuous Improvement
