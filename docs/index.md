@@ -7,9 +7,9 @@ hide:
 
 <!-- ![Image title](assets/images/Untitled.webp){ width=100% } -->
 
-Bij Respellion bouwen we software met open-source technologie. Wij geloven in transparantie en samenwerking. Daarom hebben we onze cultuur ook 'open-source' gemaakt: ons volledige Employee Handbook staat nu publiekelijk online.
+At Respellion we build software using open-source technology. We believe in transparency and collaboration. That's why we have 'open- sourced' our culture: our complete Employee Handbook is now publicly online.  
 
-Of je nu een toekomstige collega bent of een nieuwsgierige partner: **welkom in de keuken van Respellion!**
+So, whether you're a future colleague or a curious partner: **You're welcome to take a look behind the scenes at Respellion!**
 
 <div class="grid cards" markdown>
 
