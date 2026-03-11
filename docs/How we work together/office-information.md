@@ -8,6 +8,9 @@ The Respellion office is located on the first floor. The door opens with the Sal
 ## Meeting Spaces
 The meeting rooms on the first floor can be reserved via The Hague Tech.
 
+## Flex Desks
+We are allowed to use the pink tables on the first floor as flex desks when it gets busy in our office. Please be mindful of the people who rent the flex desks, as a few seats need to remain available for them as well.
+
 ## Contact information
 **Address:**  
 Waldorpstraat 5  
