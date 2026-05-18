@@ -6,6 +6,9 @@ category: leave-and-absence
 language: en
 jurisdiction: NL
 audience: [employee]
+version: 1.1.0
+last_updated: "2026-05-18"
+last_source_commit: fb9a84a
 topics:
   - holiday-leave
   - vacation-leave
@@ -58,11 +61,94 @@ key_entities:
     - "Doctor's visit: max 2h/visit (4h specialist), 8h/year"
     - "Short-term care leave: max 2x weekly hours/year (e.g. 80h full-time), Respellion pays 100%"
     - "Long-term care leave: 6 weeks/year distributed over 18 weeks, unpaid"
+entities:
+  - { id: "entity:org/respellion",              type: organization, label: "Respellion" }
+  - { id: "entity:org/uwv",                     type: organization, label: "UWV" }
+  - { id: "entity:org/goed",                    type: organization, label: "GOED (Health and Safety Provider)" }
+  - { id: "entity:org/arbodienst",              type: organization, label: "Arbodienst (occupational health and safety service)", lang: nl }
+  - { id: "entity:law/wvp",                     type: law, label: "Wet Verbetering Poortwachter", aliases: ["WVP"], lang: nl }
+  - { id: "entity:law/wazo",                    type: law, label: "Wet Arbeid en Zorg", aliases: ["WAZO", "Work and Care Act"], lang: nl }
+  - { id: "entity:role/people-officer",         type: role, label: "People Officer" }
+  - { id: "entity:role/medical-case-manager",   type: role, label: "Medical Case manager" }
+  - { id: "entity:role/request-for-leave",      type: role, label: "Request for Leave role" }
+  - { id: "entity:tool/microsoft-shifts",       type: tool, label: "Microsoft Shifts" }
+  - { id: "entity:tool/microsoft-teams",        type: tool, label: "Microsoft Teams" }
+  - { id: "entity:tool/exact-online",           type: tool, label: "Exact Online" }
+  - { id: "entity:leave_type/verlof",                type: leave_type, label: "Verlof (Leave)", lang: nl }
+  - { id: "entity:leave_type/tijd-voor-tijd",        type: leave_type, label: "Tijd-voor-tijd (Time-for-time)", lang: nl }
+  - { id: "entity:leave_type/feestdag",              type: leave_type, label: "FEESTDAG (interchangeable public holiday)", lang: nl }
+  - { id: "entity:leave_type/vacation",              type: leave_type, label: "Vacation leave" }
+  - { id: "entity:leave_type/sick",                  type: leave_type, label: "Sick leave" }
+  - { id: "entity:leave_type/maternity",             type: leave_type, label: "Maternity leave (Bevallingsverlof)", lang: en, aliases: ["Bevallingsverlof"] }
+  - { id: "entity:leave_type/pregnancy",             type: leave_type, label: "Pregnancy leave (Zwangerschapsverlof)", aliases: ["Zwangerschapsverlof"] }
+  - { id: "entity:leave_type/partner",               type: leave_type, label: "Partner/Paternity leave (Geboorteverlof)", aliases: ["geboorteverlof"] }
+  - { id: "entity:leave_type/additional-partner",    type: leave_type, label: "Additional birth leave (Aanvullend geboorteverlof)", aliases: ["aanvullend geboorteverlof"] }
+  - { id: "entity:leave_type/parental",              type: leave_type, label: "Parental leave" }
+  - { id: "entity:leave_type/paid-parental",         type: leave_type, label: "Paid parental leave" }
+  - { id: "entity:leave_type/unpaid-parental",       type: leave_type, label: "Unpaid parental leave" }
+  - { id: "entity:leave_type/adoption-foster",       type: leave_type, label: "Adoption or Foster Care leave" }
+  - { id: "entity:leave_type/study",                 type: leave_type, label: "Study leave" }
+  - { id: "entity:leave_type/unpaid",                type: leave_type, label: "Unpaid leave" }
+  - { id: "entity:leave_type/special",               type: leave_type, label: "Special leave" }
+  - { id: "entity:leave_type/emergency",             type: leave_type, label: "Emergency leave" }
+  - { id: "entity:leave_type/short-term-care",       type: leave_type, label: "Short-term medical care leave" }
+  - { id: "entity:leave_type/long-term-care",        type: leave_type, label: "Long-term care leave" }
+  - { id: "entity:leave_type/informal-care",         type: leave_type, label: "Informal care (mantelzorg)", aliases: ["mantelzorg"] }
+  - { id: "entity:metric/fte-vacation-days",         type: monetary_constant, label: "Full-time vacation days/year", value: 25, unit: "days" }
+  - { id: "entity:metric/fte-vacation-hours",        type: monetary_constant, label: "Full-time vacation hours/year", value: 200, unit: "hours" }
+  - { id: "entity:metric/statutory-days",            type: monetary_constant, label: "Statutory vacation days/year (FTE)", value: 20, unit: "days" }
+  - { id: "entity:metric/non-statutory-days",        type: monetary_constant, label: "Non-statutory vacation days/year (FTE)", value: 5, unit: "days" }
+  - { id: "entity:metric/vacation-carryover-max",    type: monetary_constant, label: "Max vacation carry-over to new year (FTE)", value: 80, unit: "hours" }
+  - { id: "entity:metric/interchangeable-holidays",  type: monetary_constant, label: "Interchangeable public holidays per year", value: 4, unit: "days" }
+  - { id: "entity:metric/maternity-leave-weeks",     type: monetary_constant, label: "Maternity leave (single birth)", value: 16, unit: "weeks" }
+  - { id: "entity:metric/maternity-leave-multi",     type: monetary_constant, label: "Maternity leave (multiple births)", value: 20, unit: "weeks" }
+  - { id: "entity:metric/partner-leave-full",        type: monetary_constant, label: "Partner leave fully paid", value: 1, unit: "week" }
+  - { id: "entity:metric/partner-leave-additional",  type: monetary_constant, label: "Additional partner leave at 70%", value: 5, unit: "weeks" }
+  - { id: "entity:metric/parental-leave-multiplier", type: monetary_constant, label: "Parental leave per child (multiplier × weekly hours)", value: 26, unit: "weeks" }
+  - { id: "entity:metric/paid-parental-weeks",       type: monetary_constant, label: "Paid parental leave portion (of 26 weeks)", value: 9, unit: "weeks" }
+  - { id: "entity:metric/study-leave-days",          type: monetary_constant, label: "Study leave per year (40h FTE)", value: 5, unit: "days" }
+  - { id: "entity:metric/doctor-visit-max",          type: monetary_constant, label: "Reimbursed doctor's visit max per visit", value: 2, unit: "hours" }
+  - { id: "entity:metric/specialist-visit-max",      type: monetary_constant, label: "Reimbursed specialist visit max", value: 4, unit: "hours" }
+  - { id: "entity:metric/doctor-visit-annual-max",   type: monetary_constant, label: "Doctor's visit annual reimbursement cap", value: 8, unit: "hours" }
+  - { id: "entity:metric/short-term-care-fte-max",   type: monetary_constant, label: "Short-term care leave per year (full-time)", value: 80, unit: "hours" }
+  - { id: "entity:metric/long-term-care-weeks",      type: monetary_constant, label: "Long-term care leave per year (distributed over 18 weeks)", value: 6, unit: "weeks" }
+relations:
+  - { s: "entity:org/respellion", p: "complies_with", o: "entity:law/wvp" }
+  - { s: "entity:org/respellion", p: "complies_with", o: "entity:law/wazo" }
+  - { s: "entity:leave_type/verlof",                p: "registered_in", o: "entity:tool/exact-online" }
+  - { s: "entity:leave_type/tijd-voor-tijd",        p: "registered_in", o: "entity:tool/exact-online" }
+  - { s: "entity:leave_type/vacation",              p: "requested_in",  o: "entity:tool/microsoft-shifts" }
+  - { s: "entity:leave_type/vacation",              p: "approved_by",   o: "entity:role/people-officer" }
+  - { s: "entity:leave_type/sick",                  p: "reported_to",   o: "entity:role/people-officer" }
+  - { s: "entity:org/respellion",                   p: "wage_continuation_year_1", o: 100, note: "percent" }
+  - { s: "entity:org/respellion",                   p: "wage_continuation_year_2", o: 70,  note: "percent" }
+  - { s: "entity:leave_type/maternity",             p: "duration",      o: "entity:metric/maternity-leave-weeks" }
+  - { s: "entity:leave_type/maternity",             p: "duration_multiple_births", o: "entity:metric/maternity-leave-multi" }
+  - { s: "entity:leave_type/maternity",             p: "wage_rate",     o: 100, note: "percent" }
+  - { s: "entity:leave_type/partner",               p: "duration",      o: "entity:metric/partner-leave-full" }
+  - { s: "entity:leave_type/additional-partner",    p: "duration",      o: "entity:metric/partner-leave-additional" }
+  - { s: "entity:leave_type/additional-partner",    p: "wage_rate",     o: 70, note: "percent, paid by UWV up to max daily wage" }
+  - { s: "entity:leave_type/additional-partner",    p: "paid_by",       o: "entity:org/uwv" }
+  - { s: "entity:leave_type/parental",              p: "entitlement_per_child", o: "entity:metric/parental-leave-multiplier", note: "26 × weekly working hours" }
+  - { s: "entity:leave_type/parental",              p: "applies_to_children_under", o: 8, note: "years" }
+  - { s: "entity:leave_type/paid-parental",         p: "duration",      o: "entity:metric/paid-parental-weeks" }
+  - { s: "entity:leave_type/paid-parental",         p: "wage_rate",     o: 70, note: "percent" }
+  - { s: "entity:leave_type/paid-parental",         p: "deadline",      o: "child's 1st birthday" }
+  - { s: "entity:leave_type/study",                 p: "entitlement",   o: "entity:metric/study-leave-days" }
+  - { s: "entity:leave_type/short-term-care",       p: "duration_fte",  o: "entity:metric/short-term-care-fte-max" }
+  - { s: "entity:leave_type/short-term-care",       p: "wage_rate_legal", o: 70, note: "percent legally required" }
+  - { s: "entity:leave_type/short-term-care",       p: "wage_rate_respellion", o: 100, note: "Respellion supplements to 100%" }
+  - { s: "entity:leave_type/long-term-care",        p: "duration",      o: "entity:metric/long-term-care-weeks" }
+  - { s: "entity:leave_type/long-term-care",        p: "wage_paid",     o: false }
+  - { s: "entity:leave_type/emergency",             p: "wage_rate",     o: 100, note: "percent" }
+  - { s: "entity:leave_type/feestdag",              p: "entitlement",   o: "entity:metric/interchangeable-holidays" }
+  - { s: "entity:org/goed",                         p: "first_contact_after_days_sick", o: 5 }
+  - { s: "entity:org/goed",                         p: "problem_analysis_after_weeks", o: 6 }
 source_files:
-  - docs/Anything to do with (holiday) leave/holiday-vacation-leave.md
-  - docs/Anything to do with (holiday) leave/sick-leave.md
-  - docs/Anything to do with (holiday) leave/parental-leave.md
-  - docs/Anything to do with (holiday) leave/special-leave.md
+  - { path: "docs/Anything to do with (holiday) leave/holiday-vacation-leave.md", sha: "cca8b1181f1e817e5d562b92366d4598ef944b44", lines: "1-133" }
+  - { path: "docs/Anything to do with (holiday) leave/sick-leave.md",             sha: "6dffe67d3d892e45d78095f690b367d509571e1b", lines: "1-68" }
+  - { path: "docs/Anything to do with (holiday) leave/parental-leave.md",         sha: "72aa88b5d8a406a6ea752c3f8aae143e8b278c2c", lines: "1-96" }
+  - { path: "docs/Anything to do with (holiday) leave/special-leave.md",          sha: "dfe44a337b97e7bf0171d5802c97fd6383342765", lines: "1-131" }
 related_files:
   - 01-organization-identity-and-culture.md
   - 02-daily-operations-and-workplace.md
@@ -73,6 +159,28 @@ related_files:
 
 > Source consolidation: this document merges the content originally distributed across the `Anything to do with (holiday) leave` section of the employee handbook into a single AI-ingestable knowledge unit.
 
+## Glossary
+
+| Abbreviation | Expansion |
+|---|---|
+| ANW | Algemene nabestaandenwet — Dutch general surviving relatives' benefits law |
+| AO | Arbeidsongeschiktheid — incapacity for work |
+| Arbodienst | Occupational health and safety service (Dutch) |
+| Bevallingsverlof | Maternity leave (Dutch) |
+| BHV | Bedrijfshulpverlening — in-house emergency response |
+| FEESTDAG | Interchangeable public-holiday leave type in Exact (Dutch: "holiday") |
+| GOED | Health and Safety Provider used by Respellion |
+| Geboorteverlof | Partner / paternity birth leave (Dutch) |
+| Mantelzorg | Informal care (Dutch) |
+| TfT | Tijd-voor-tijd (Time-for-time) |
+| UWV | Uitvoeringsinstituut Werknemersverzekeringen — Dutch Employee Insurance Agency |
+| Verlof | Leave (Dutch) |
+| WAZO | Wet Arbeid en Zorg — Work and Care Act (Dutch) |
+| WVP | Wet Verbetering Poortwachter — "Gatekeeper Improvement Act" (Dutch) |
+| Zwangerschapsverlof | Pregnancy leave (Dutch) |
+| Zwangerschapsverklaring | Pregnancy declaration letter (Dutch) |
+
+<!-- source: docs/Anything to do with (holiday) leave/holiday-vacation-leave.md#L1-L133 sha:cca8b11 -->
 ## 1. Holiday and Vacation Leave
 
 ### 1.1 Leave procedure
@@ -175,6 +283,7 @@ If you want to take another day off instead of the regular public holidays, you 
 
 ---
 
+<!-- source: docs/Anything to do with (holiday) leave/sick-leave.md#L1-L68 sha:6dffe67 -->
 ## 2. Sick Leave
 
 Respellion wishes to provide a good physical and psychological working environment and strives towards making the workplace an attractive place for the individual as well as preventing absence due to illness, by offering an exciting daily worklife with unique development opportunities. We believe that open and honest communication will help to reduce absenteeism, support and retain long-term employees even when dealing with difficult and sensitive issues.
@@ -227,6 +336,7 @@ For example: you have a 36-hour contract, and you are 50% incapacitated for work
 
 ---
 
+<!-- source: docs/Anything to do with (holiday) leave/parental-leave.md#L1-L96 sha:72aa88b -->
 ## 3. Parental Leave
 
 This policy document outlines the parental leave entitlements for Respellion. The policy is aligned with the current Dutch regulations as stipulated in the Work and Care Act (Wet Arbeid en Zorg).
@@ -326,6 +436,7 @@ Partners (including same-sex partners) of women who have given birth are entitle
 
 ---
 
+<!-- source: docs/Anything to do with (holiday) leave/special-leave.md#L1-L131 sha:dfe44a3 -->
 ## 4. Special Leave
 
 ### 4.1 Vacation leave

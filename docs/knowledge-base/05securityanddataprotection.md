@@ -6,6 +6,9 @@ category: security
 language: en
 jurisdiction: NL
 audience: [employee]
+version: 1.1.0
+last_updated: "2026-05-18"
+last_source_commit: fb9a84a
 topics:
   - bhv
   - evacuation
@@ -48,9 +51,39 @@ key_entities:
     - destroying
   roles:
     - "designated privacy officer"
+entities:
+  - { id: "entity:org/respellion",                type: organization, label: "Respellion" }
+  - { id: "entity:law/gdpr",                      type: law, label: "General Data Protection Regulation", aliases: ["GDPR", "AVG"] }
+  - { id: "entity:law/wet-algemene-bepalingen-bsn", type: law, label: "Wet algemene bepalingen burgerservicenummer (General Provisions for BSN Act)", lang: nl }
+  - { id: "entity:law/wet-bsn-zorg",              type: law, label: "Wet gebruik burgerservicenummer in de zorg (BSN in Healthcare Act)", lang: nl }
+  - { id: "entity:law/wet-persoonsgebonden-nummers-onderwijs", type: law, label: "Wet persoonsgebonden nummers in het onderwijs (Identification Numbers in Education Act)", lang: nl }
+  - { id: "entity:concept/bhv",                   type: concept, label: "BHV (Bedrijfshulpverlening / in-house emergency response)", lang: nl }
+  - { id: "entity:concept/evacuation",            type: concept, label: "Evacuation procedure" }
+  - { id: "entity:concept/rie",                   type: concept, label: "RI&E (Risico-Inventarisatie & -Evaluatie)", lang: nl }
+  - { id: "entity:role/designated-privacy-officer", type: role, label: "Designated privacy officer" }
+  - { id: "entity:data_category/ordinary",        type: data_category, label: "Ordinary Personal Data" }
+  - { id: "entity:data_category/special",         type: data_category, label: "Special Categories of Personal Data" }
+  - { id: "entity:data_category/sensitive",       type: data_category, label: "Sensitive Personal Data" }
+  - { id: "entity:data_category/genetic",         type: data_category, label: "Genetic Personal Data" }
+  - { id: "entity:data_category/bsn",             type: data_category, label: "Citizen Service Number (BSN, Burgerservicenummer)", aliases: ["BSN", "Burgerservicenummer"] }
+  - { id: "entity:date/gdpr-effective",           type: concept, label: "GDPR effective date", value: "2018-05-25" }
+relations:
+  - { s: "entity:org/respellion", p: "complies_with", o: "entity:law/gdpr" }
+  - { s: "entity:law/gdpr",       p: "effective_from", o: "entity:date/gdpr-effective" }
+  - { s: "entity:law/gdpr",       p: "does_not_apply_to", o: "data of deceased individuals" }
+  - { s: "entity:data_category/special",  p: "processing_default", o: "prohibited unless legal exception applies" }
+  - { s: "entity:data_category/special",  p: "consult_role", o: "entity:role/designated-privacy-officer" }
+  - { s: "entity:data_category/sensitive", p: "includes", o: "Electronic communications" }
+  - { s: "entity:data_category/sensitive", p: "includes", o: "Location data" }
+  - { s: "entity:data_category/sensitive", p: "includes", o: "Financial data" }
+  - { s: "entity:data_category/sensitive", p: "includes", o: "entity:data_category/bsn" }
+  - { s: "entity:data_category/bsn", p: "use_restricted_to", o: "purposes prescribed by law" }
+  - { s: "entity:data_category/bsn", p: "regulated_by", o: "entity:law/wet-algemene-bepalingen-bsn" }
+  - { s: "entity:data_category/bsn", p: "regulated_by", o: "entity:law/wet-bsn-zorg" }
+  - { s: "entity:data_category/bsn", p: "regulated_by", o: "entity:law/wet-persoonsgebonden-nummers-onderwijs" }
 source_files:
-  - docs/Security/bhv-evacuation.md
-  - docs/Security/working-with-personal-data.md
+  - { path: "docs/Security/bhv-evacuation.md",          sha: "206842593a6b2aa7e04351fe481b49b9d071bfda", lines: "1-5",  partial: true }
+  - { path: "docs/Security/working-with-personal-data.md", sha: "747dec4a31a2f2e422d564b6f14bcf1872e2d574", lines: "1-55" }
 related_files:
   - 01-organization-identity-and-culture.md
   - 02-daily-operations-and-workplace.md
@@ -60,6 +93,17 @@ related_files:
 
 > Source consolidation: this document merges the content originally distributed across the `Security` section of the employee handbook into a single AI-ingestable knowledge unit.
 
+## Glossary
+
+| Abbreviation | Expansion |
+|---|---|
+| AVG | Algemene Verordening Gegevensbescherming — Dutch name for the GDPR |
+| BHV | Bedrijfshulpverlening — in-house emergency response (Dutch) |
+| BSN | Burgerservicenummer — Dutch Citizen Service Number |
+| GDPR | General Data Protection Regulation (EU Regulation 2016/679) |
+| RI&E | Risico-Inventarisatie & -Evaluatie — Risk Inventory & Evaluation (Dutch) |
+
+<!-- source: docs/Security/bhv-evacuation.md#L1-L5 sha:2068425 partial:true -->
 ## 1. BHV & Evacuation Plan, RI&E
 
 Placeholder: evacuation and safety procedures.
@@ -68,6 +112,7 @@ Placeholder: evacuation and safety procedures.
 
 ---
 
+<!-- source: docs/Security/working-with-personal-data.md#L1-L55 sha:747dec4 -->
 ## 2. Working with Personal Data
 
 ### 2.1 Working with Personal Data: Understanding the GDPR

@@ -5,6 +5,9 @@ description: "Consolidated reference for day-to-day operational policies at Resp
 category: operations
 language: en
 audience: [employee]
+version: 1.1.0
+last_updated: "2026-05-18"
+last_source_commit: fb9a84a
 topics:
   - office-presence
   - hybrid-work
@@ -42,13 +45,52 @@ key_entities:
   external_references:
     - "Exact Leave Registration"
     - "Outlook Manual (SharePoint)"
+entities:
+  - { id: "entity:org/respellion",              type: organization, label: "Respellion" }
+  - { id: "entity:tool/outlook-calendar",       type: tool, label: "Outlook Calendar" }
+  - { id: "entity:tool/exact-online",           type: tool, label: "Exact Online" }
+  - { id: "entity:tool/microsoft-shifts",       type: tool, label: "Microsoft Shifts" }
+  - { id: "entity:tool/microsoft-teams",        type: tool, label: "Microsoft Teams" }
+  - { id: "entity:tool/sharepoint",             type: tool, label: "SharePoint" }
+  - { id: "entity:tool/papercut-hive",          type: tool, label: "PaperCut Hive" }
+  - { id: "entity:tool/ns-business-card",       type: tool, label: "NS business card" }
+  - { id: "entity:role/people-officer",         type: role, label: "People Officer" }
+  - { id: "entity:role/tht-team",               type: role, label: "THT team" }
+  - { id: "entity:concept/time-for-time",       type: concept, label: "Time-for-Time", aliases: ["TfT", "Tijd-voor-tijd"], lang: en }
+  - { id: "entity:concept/overtime",            type: concept, label: "Overtime" }
+  - { id: "entity:value/self-discipline",       type: concept, label: "Self-discipline" }
+  - { id: "entity:project/tm",                  type: concept, label: "Time and Material project", aliases: ["TM"] }
+  - { id: "entity:project/fpp",                 type: concept, label: "Fixed Price Project", aliases: ["FPP"] }
+  - { id: "entity:project/intbd001",            type: concept, label: "Project INTBD001 - Business Development", aliases: ["INTBD001"] }
+  - { id: "entity:leave_type/verlof",           type: leave_type, label: "Verlof (Leave)", lang: nl }
+  - { id: "entity:leave_type/tijd-voor-tijd",   type: leave_type, label: "Tijd-voor-tijd (Time-for-time)", lang: nl }
+  - { id: "entity:metric/tft-savings-maximum",  type: monetary_constant, label: "Time-for-Time savings maximum", value: 24, unit: "hours" }
+  - { id: "entity:metric/weekday-overtime-rate", type: metric, label: "Weekday overtime compensation rate", value: 100, unit: "percent" }
+  - { id: "entity:metric/weekend-overtime-rate", type: metric, label: "Saturday/Sunday overtime compensation rate", value: 175, unit: "percent" }
+  - { id: "entity:metric/holiday-overtime-rate", type: metric, label: "Public holiday overtime compensation rate", value: 300, unit: "percent" }
+  - { id: "entity:metric/travel-time-threshold", type: metric, label: "Travel time threshold (one-way, not compensated)", value: 1.5, unit: "hours" }
+  - { id: "entity:metric/travel-time-ratio",    type: metric, label: "Travel time compensation ratio beyond threshold", value: "1:1" }
+relations:
+  - { s: "entity:org/respellion", p: "uses_tool", o: "entity:tool/outlook-calendar", note: "for planned presence (Remote / Office)" }
+  - { s: "entity:org/respellion", p: "uses_tool", o: "entity:tool/exact-online", note: "financial administration and time registration" }
+  - { s: "entity:org/respellion", p: "uses_tool", o: "entity:tool/papercut-hive", note: "office printing" }
+  - { s: "entity:concept/time-for-time", p: "compensates_at", o: "entity:metric/weekday-overtime-rate" }
+  - { s: "entity:concept/overtime", p: "compensates_at", o: "entity:metric/weekend-overtime-rate", note: "Saturdays and Sundays" }
+  - { s: "entity:concept/overtime", p: "compensates_at", o: "entity:metric/holiday-overtime-rate", note: "public holidays" }
+  - { s: "entity:concept/time-for-time", p: "savings_capped_at", o: "entity:metric/tft-savings-maximum" }
+  - { s: "entity:concept/time-for-time", p: "registered_in", o: "entity:tool/exact-online" }
+  - { s: "entity:concept/time-for-time", p: "registered_as", o: "entity:leave_type/tijd-voor-tijd" }
+  - { s: "entity:org/respellion", p: "travel_threshold", o: "entity:metric/travel-time-threshold" }
+  - { s: "entity:org/respellion", p: "travel_compensation_ratio", o: "entity:metric/travel-time-ratio" }
+  - { s: "entity:role/people-officer", p: "registers_sick_leave_in", o: "entity:tool/exact-online" }
+  - { s: "entity:role/tht-team", p: "supports", o: "entity:tool/papercut-hive" }
 source_files:
-  - docs/Day to day/office-presence.md
-  - docs/Day to day/office-etiquette.md
-  - docs/Day to day/overtime-flexible-hours.md
-  - docs/Day to day/time-registration.md
-  - docs/Day to day/travel-time-policy.md
-  - docs/Day to day/printer.md
+  - { path: "docs/Day to day/office-presence.md",         sha: "2ac2ae56d30f8e89eef644b8d5173ca887cabaaf", lines: "1-6" }
+  - { path: "docs/Day to day/office-etiquette.md",        sha: "f6b7982d02c09346e637e8bca45c9dc4d3d8dd52", lines: "1-12" }
+  - { path: "docs/Day to day/overtime-flexible-hours.md", sha: "243253e70b449edfa6c8b3fb04b0c19acd3b84f9", lines: "1-43" }
+  - { path: "docs/Day to day/time-registration.md",       sha: "4bd1b0f755df2f36226c875844a03638cd1c5828", lines: "1-27" }
+  - { path: "docs/Day to day/travel-time-policy.md",      sha: "70d243ba24a21131922a044922da49abcf42e2e8", lines: "1-11" }
+  - { path: "docs/Day to day/printer.md",                 sha: "97d0b775442baa99bbf9cf25fbb04202466269c2", lines: "1-14" }
 related_files:
   - 01-organization-identity-and-culture.md
   - 03-leave-and-absence.md
@@ -59,6 +101,19 @@ related_files:
 
 > Source consolidation: this document merges the content originally distributed across the `Day to day` section of the employee handbook into a single AI-ingestable knowledge unit.
 
+## Glossary
+
+| Abbreviation | Expansion |
+|---|---|
+| FPP | Fixed Price Project |
+| TfT | Tijd-voor-tijd (Time-for-time) |
+| THT | The Hague Tech |
+| TM | Time and Material project |
+| NS | Nederlandse Spoorwegen (Dutch railways) |
+| INTBD001 | Internal Business Development project code in Exact |
+| Uursoort | Hour type / category in Exact time registration (Dutch) |
+
+<!-- source: docs/Day to day/office-presence.md#L1-L6 sha:2ac2ae5 -->
 ## 1. Office Presence
 
 To keep track of who is in the office and when, you can set your planned presence in Outlook Calendar. For each workday, indicate whether you expect to be working from home (Remote) or at the office (Office).
@@ -69,6 +124,7 @@ Of course, not every week is the same. In that case, select your average presenc
 
 ---
 
+<!-- source: docs/Day to day/office-etiquette.md#L1-L12 sha:f6b7982 -->
 ## 2. Office Etiquette
 
 At Respellion, we strive for a productive and respectful work environment for everyone, including during remote meetings held from the office. To minimize disruptions and ensure optimal concentration, the following guidelines apply:
@@ -81,6 +137,7 @@ These guidelines contribute to our collective well-being and efficient way of wo
 
 ---
 
+<!-- source: docs/Day to day/overtime-flexible-hours.md#L1-L43 sha:243253e -->
 ## 3. Overtime and Flexible Hours
 
 At Respellion, we strive for a sustainable and healthy work-life balance. This aligns directly with our core value of Self-Discipline. We trust that as a professional, you take personal responsibility for maintaining healthy working hours. These guidelines provide a framework to facilitate flexibility, protect you, and simultaneously offer the autonomy that fits our culture. In exceptional cases, there is always the opportunity to discuss possibilities.
@@ -121,6 +178,7 @@ We offer the option to have saved hours paid out. It is your own responsibility 
 
 ---
 
+<!-- source: docs/Day to day/time-registration.md#L1-L27 sha:4bd1b0f -->
 ## 4. Exact Time Registration
 
 We use Exact online as financial administration and for time registration in projects, internal activities and absence.
@@ -141,6 +199,7 @@ Do report your illness to the people officer role, according to the procedure in
 
 ---
 
+<!-- source: docs/Day to day/travel-time-policy.md#L1-L11 sha:70d243b -->
 ## 5. Travel Time Policy
 
 At Respellion, we recognize that business travel is sometimes necessary to serve our clients effectively. This policy outlines how travel time is compensated, ensuring a fair balance between business needs and personal time. The following guidelines have been established to provide clarity on travel time compensation for all employees.
@@ -153,6 +212,7 @@ At Respellion, we recognize that business travel is sometimes necessary to serve
 
 ---
 
+<!-- source: docs/Day to day/printer.md#L1-L14 sha:97d0b77 -->
 ## 6. Printer — PaperCut Hive
 
 We can print documents with the PaperCut Hive service which requires to create an account. This system will handle all your printing. PaperCut will guide you through the setup process, but here's a quick overview:

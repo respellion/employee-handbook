@@ -5,6 +5,9 @@ description: "Consolidated overview of Respellion's services, purpose, core valu
 category: organization
 language: en
 audience: [employee, candidate, partner, public]
+version: 1.1.0
+last_updated: "2026-05-18"
+last_source_commit: fb9a84a
 topics:
   - company-identity
   - services
@@ -55,17 +58,141 @@ key_entities:
     - "ps@respellion.nl (Patrick Smulders)"
     - "rve@respellion.nl (Raymond Verhoef)"
     - "+31(0)85-0607428"
+entities:
+  - { id: "entity:org/respellion",                type: organization, label: "Respellion" }
+  - { id: "entity:org/postnl",                    type: organization, label: "PostNL" }
+  - { id: "entity:org/the-hague-tech",            type: organization, label: "The Hague Tech" }
+  - { id: "entity:org/general-board-circle",      type: organization, label: "General Board Circle" }
+  - { id: "entity:framework/holacracy",           type: framework, label: "Holacracy" }
+  - { id: "entity:framework/agile",               type: framework, label: "Agile" }
+  - { id: "entity:framework/scrum",               type: framework, label: "Scrum" }
+  - { id: "entity:framework/kanban",              type: framework, label: "Kanban" }
+  - { id: "entity:framework/devops",              type: framework, label: "DevOps" }
+  - { id: "entity:framework/cicd",                type: framework, label: "CI/CD" }
+  - { id: "entity:framework/agile-manifesto",     type: framework, label: "Agile Manifesto" }
+  - { id: "entity:standard/iso-9001-2015",        type: standard,  label: "ISO 9001:2015" }
+  - { id: "entity:standard/iso-14001",            type: standard,  label: "ISO 14001" }
+  - { id: "entity:role/lead-link",                type: role, label: "Lead Link" }
+  - { id: "entity:role/facilitator",              type: role, label: "Facilitator" }
+  - { id: "entity:role/people-officer",           type: role, label: "People Officer" }
+  - { id: "entity:role/contracting",              type: role, label: "Contracting" }
+  - { id: "entity:role/product-owner",            type: role, label: "Product Owner" }
+  - { id: "entity:tool/glassfrog",                type: tool, label: "Glassfrog" }
+  - { id: "entity:tool/microsoft-loop",           type: tool, label: "Microsoft Loop" }
+  - { id: "entity:tool/microsoft-teams",          type: tool, label: "Microsoft Teams" }
+  - { id: "entity:tool/sharepoint",               type: tool, label: "SharePoint" }
+  - { id: "entity:tool/miro",                     type: tool, label: "Miro" }
+  - { id: "entity:tool/git",                      type: tool, label: "Git" }
+  - { id: "entity:tool/jira",                     type: tool, label: "Jira" }
+  - { id: "entity:tool/azure-devops",             type: tool, label: "Azure DevOps" }
+  - { id: "entity:tool/salto-ks",                 type: tool, label: "Salto KS" }
+  - { id: "entity:tool/respellion-task-board",    type: tool, label: "Respellion Task Board" }
+  - { id: "entity:concept/tension",               type: concept, label: "Tension", lang: en }
+  - { id: "entity:concept/sustainable-digitization", type: concept, label: "Sustainable Digitization" }
+  - { id: "entity:concept/coaching-culture",      type: concept, label: "Coaching Culture" }
+  - { id: "entity:concept/personal-development-plan", type: concept, label: "Personal Development Plan", aliases: ["POP"] }
+  - { id: "entity:concept/ofman-core-quadrant",   type: concept, label: "Ofman Core Quadrant" }
+  - { id: "entity:concept/capacity-building",     type: concept, label: "Capacity Building Framework" }
+  - { id: "entity:concept/dod",                   type: concept, label: "Definition of Done", aliases: ["DoD"] }
+  - { id: "entity:concept/okr",                   type: concept, label: "Objectives and Key Results", aliases: ["OKR"] }
+  - { id: "entity:concept/strategic-review",      type: concept, label: "Strategic Review" }
+  - { id: "entity:concept/pull-request",          type: concept, label: "Pull Request" }
+  - { id: "entity:value/trust",                   type: concept, label: "Trust" }
+  - { id: "entity:value/courage",                 type: concept, label: "Courage" }
+  - { id: "entity:value/self-discipline",         type: concept, label: "Self-discipline" }
+  - { id: "entity:value/entrepreneurship",        type: concept, label: "Entrepreneurship" }
+  - { id: "entity:event/tactical-meeting",        type: event, label: "Tactical Meeting" }
+  - { id: "entity:event/governance-meeting",      type: event, label: "Governance Meeting" }
+  - { id: "entity:event/huddle-checkin",          type: event, label: "Huddle Check-in" }
+  - { id: "entity:event/huddle-elevator",         type: event, label: "Huddle Elevator" }
+  - { id: "entity:event/sprint-demo",             type: event, label: "Sprint Demo" }
+  - { id: "entity:event/retrospective",           type: event, label: "Retrospective" }
+  - { id: "entity:event/uat",                     type: event, label: "User Acceptance Testing", aliases: ["UAT"] }
+  - { id: "entity:location/respellion-office",    type: location, label: "Respellion office, Waldorpstraat 5, 2521 CA 's Gravenhage" }
+  - { id: "entity:location/den-haag-hollands-spoor", type: location, label: "Den Haag Hollands Spoor station" }
+  - { id: "entity:person/patrick-smulders",       type: person, label: "Patrick Smulders" }
+  - { id: "entity:person/raymond-verhoef",        type: person, label: "Raymond Verhoef" }
+relations:
+  - { s: "entity:org/respellion", p: "uses_framework",  o: "entity:framework/holacracy" }
+  - { s: "entity:org/respellion", p: "uses_framework",  o: "entity:framework/agile" }
+  - { s: "entity:org/respellion", p: "uses_framework",  o: "entity:framework/devops" }
+  - { s: "entity:org/respellion", p: "uses_framework",  o: "entity:framework/cicd" }
+  - { s: "entity:org/respellion", p: "uses_methodology", o: "entity:framework/scrum" }
+  - { s: "entity:org/respellion", p: "uses_methodology", o: "entity:framework/kanban" }
+  - { s: "entity:org/respellion", p: "endorses",        o: "entity:framework/agile-manifesto" }
+  - { s: "entity:org/respellion", p: "conforms_to",     o: "entity:standard/iso-9001-2015" }
+  - { s: "entity:org/respellion", p: "integrates_with", o: "entity:standard/iso-14001" }
+  - { s: "entity:org/respellion", p: "has_value",       o: "entity:value/trust" }
+  - { s: "entity:org/respellion", p: "has_value",       o: "entity:value/courage" }
+  - { s: "entity:org/respellion", p: "has_value",       o: "entity:value/self-discipline" }
+  - { s: "entity:org/respellion", p: "has_value",       o: "entity:value/entrepreneurship" }
+  - { s: "entity:org/respellion", p: "stores_roles_in", o: "entity:tool/glassfrog" }
+  - { s: "entity:org/respellion", p: "tracks_tasks_in", o: "entity:tool/respellion-task-board" }
+  - { s: "entity:org/respellion", p: "located_at",      o: "entity:location/respellion-office" }
+  - { s: "entity:location/respellion-office", p: "in_building_of", o: "entity:org/postnl" }
+  - { s: "entity:location/respellion-office", p: "near", o: "entity:location/den-haag-hollands-spoor" }
+  - { s: "entity:location/respellion-office", p: "access_via", o: "entity:tool/salto-ks" }
+  - { s: "entity:location/respellion-office", p: "rooms_reserved_via", o: "entity:org/the-hague-tech" }
+  - { s: "entity:org/respellion", p: "contact",         o: "entity:person/patrick-smulders" }
+  - { s: "entity:org/respellion", p: "contact",         o: "entity:person/raymond-verhoef" }
+  - { s: "entity:person/patrick-smulders", p: "email",  o: "ps@respellion.nl" }
+  - { s: "entity:person/raymond-verhoef", p: "email",   o: "rve@respellion.nl" }
+  - { s: "entity:org/respellion", p: "phone",           o: "+31(0)85-0607428" }
+  - { s: "entity:framework/holacracy", p: "defines",    o: "entity:concept/tension" }
+  - { s: "entity:framework/holacracy", p: "defines_event", o: "entity:event/tactical-meeting" }
+  - { s: "entity:framework/holacracy", p: "defines_event", o: "entity:event/governance-meeting" }
+  - { s: "entity:event/tactical-meeting", p: "administered_in", o: "entity:tool/microsoft-loop" }
+  - { s: "entity:event/governance-meeting", p: "administered_in", o: "entity:tool/microsoft-loop" }
+  - { s: "entity:event/tactical-meeting", p: "has_cadence", o: "monthly" }
+  - { s: "entity:event/governance-meeting", p: "has_cadence", o: "monthly" }
+  - { s: "entity:event/huddle-checkin", p: "has_cadence", o: "weekly", note: "Conflicts with file 04 source coaching-culture.md which says 'twice-weekly' — see conflicts.huddle-checkin-frequency" }
+  - { s: "entity:event/huddle-elevator", p: "has_cadence", o: "every two months", note: "Conflicts with other sources — see conflicts.huddle-elevator-cadence" }
+  - { s: "entity:concept/personal-development-plan", p: "uses_model", o: "entity:concept/ofman-core-quadrant" }
+  - { s: "entity:concept/personal-development-plan", p: "stored_in", o: "entity:tool/miro" }
+  - { s: "entity:concept/coaching-culture", p: "replaces", o: "traditional performance management" }
+  - { s: "entity:concept/capacity-building", p: "covers_area", o: "professional capacity", note: "3-area variant from coaching-culture-faq and circles-huddles-celebrations — see conflicts.capacity-framework-areas" }
+  - { s: "entity:concept/capacity-building", p: "covers_area", o: "emotional capacity" }
+  - { s: "entity:concept/capacity-building", p: "covers_area", o: "physical capacity" }
+  - { s: "entity:standard/iso-9001-2015", p: "section_8_1_quality_gate", o: "entity:concept/dod" }
+  - { s: "entity:concept/pull-request", p: "required_by", o: "entity:standard/iso-9001-2015", note: "Section 8.3.4" }
+  - { s: "entity:event/uat", p: "validates_release_for", o: "entity:org/respellion" }
+  - { s: "entity:org/respellion", p: "review_cadence", o: "twice a year", note: "Formal review of role-fillers (QMS 7.1/7.2)" }
+  - { s: "entity:org/respellion", p: "audit_cadence", o: "annual", note: "QMS 9.2 internal audit" }
+conflicts:
+  - id: huddle-checkin-frequency
+    description: "Frequency of Huddle Check-ins disagrees across source files."
+    status: open
+    sources:
+      - { path: "docs/How we work together/coaching-culture-faq.md",       lines: "9",  quote: "weekly 'huddle check-ins' (once a week)" }
+      - { path: "docs/How we work together/circles-huddles-celebrations.md", lines: "7", quote: "These weekly small group meetings" }
+      - { path: "docs/Who we are/respellion-model.md",                     lines: "39", quote: "A Huddle check-in meeting per week" }
+      - { path: "docs/Learning & personal development/coaching-culture.md", lines: "8", quote: "These twice-weekly small group meetings" }
+  - id: huddle-elevator-cadence
+    description: "Cadence of Huddle Elevator sessions disagrees across source files."
+    status: open
+    sources:
+      - { path: "docs/Who we are/respellion-model.md",                     lines: "40", quote: "A Huddle Elevator session every two months" }
+      - { path: "docs/How we work together/coaching-culture-faq.md",       lines: "9",  quote: "monthly 'huddle elevators'" }
+      - { path: "docs/How we work together/circles-huddles-celebrations.md", lines: "9", quote: "These two monthly in-depth sessions" }
+      - { path: "docs/Learning & personal development/coaching-culture.md", lines: "10", quote: "These monthly in-depth sessions" }
+  - id: capacity-framework-areas
+    description: "The Capacity Building Framework is described with three areas in some sources and four in another."
+    status: open
+    sources:
+      - { path: "docs/How we work together/coaching-culture-faq.md",       lines: "13", quote: "three main areas: professional capacity, emotional capacity, physical capacity" }
+      - { path: "docs/How we work together/circles-huddles-celebrations.md", lines: "13-17", quote: "Professional Capacity, Emotional Capacity, Physical Capacity" }
+      - { path: "docs/Learning & personal development/coaching-culture.md", lines: "19-34", quote: "Intellectual Capacity, Physical Capacity, Emotional Capacity, Spiritual Capacity" }
 source_files:
-  - docs/index.md
-  - docs/Who we are/what-does-respellion.md
-  - docs/Who we are/respellion-model.md
-  - docs/Who we are/qms-design.md
-  - docs/Who we are/your-first-day.md
-  - docs/How we work together/our-purpose.md
-  - docs/How we work together/core-values.md
-  - docs/How we work together/coaching-culture-faq.md
-  - docs/How we work together/circles-huddles-celebrations.md
-  - docs/How we work together/office-information.md
+  - { path: "docs/index.md",                                                 sha: "725e71adf426e88d190b05093132e2ee751fe583", lines: "1-75",  partial: true }
+  - { path: "docs/Who we are/what-does-respellion.md",                       sha: "1514a8e5bbbea0f2ef43473e973a6a093db4350c", lines: "1-34" }
+  - { path: "docs/Who we are/respellion-model.md",                           sha: "af521305e5dbd346332b7672a8a5af5fc4b44ef6", lines: "1-73" }
+  - { path: "docs/Who we are/qms-design.md",                                 sha: "e200cc748ca0ba0a40e5b1813092868bd24515f3", lines: "1-105" }
+  - { path: "docs/Who we are/your-first-day.md",                             sha: "922f9a1176b0b30c0332c8a2a6d327c567633958", lines: "1-29" }
+  - { path: "docs/How we work together/our-purpose.md",                      sha: "a4f8446ded9cecad2b21c5465ea7f09f171a62ff", lines: "1-19" }
+  - { path: "docs/How we work together/core-values.md",                      sha: "1827813f855142ce45f9ce67213ef26bb33895ad", lines: "1-74" }
+  - { path: "docs/How we work together/coaching-culture-faq.md",             sha: "eb3f77a8d2925217816043600f115044306bd088", lines: "1-25" }
+  - { path: "docs/How we work together/circles-huddles-celebrations.md",     sha: "5373a466c918645e0d9fcf84583559301fbf2f86", lines: "1-21" }
+  - { path: "docs/How we work together/office-information.md",               sha: "c213da7fa880ce8ea6db2f5ce12a7e4c57a3f7a8", lines: "1-29" }
 related_files:
   - 02-daily-operations-and-workplace.md
   - 03-leave-and-absence.md
@@ -77,6 +204,25 @@ related_files:
 
 > Source consolidation: this document merges the content originally distributed across the `Who we are`, `How we work together`, and `index` sections of the employee handbook into a single AI-ingestable knowledge unit.
 
+## Glossary
+
+| Abbreviation | Expansion |
+|---|---|
+| AOW | Algemene Ouderdomswet — Dutch state pension |
+| CI/CD | Continuous Integration / Continuous Deployment |
+| DevOps | Development and Operations |
+| DoD | Definition of Done |
+| ISO | International Organization for Standardization |
+| KS | Salto KS — keyless smartphone-based access system |
+| OKR | Objectives and Key Results |
+| POP | Persoonlijk Ontwikkelplan — Personal Development Plan |
+| PR | Pull Request |
+| QMS | Quality Management System |
+| RfP | Request for Proposal |
+| UAT | User Acceptance Testing |
+| UX | User Experience |
+
+<!-- source: docs/index.md#L1-L75 sha:725e71a partial:true -->
 ## 1. Handbook Overview (from index.md)
 
 At Respellion we build software using open-source technology. We believe in transparency and collaboration. That's why we have 'open- sourced' our culture: our complete Employee Handbook is now publicly online.
@@ -98,6 +244,7 @@ The original handbook structure groups information under the following top-level
 
 ## 2. Who We Are
 
+<!-- source: docs/Who we are/what-does-respellion.md#L1-L34 sha:1514a8e -->
 ### 2.1 What does Respellion actually do?
 
 #### 2.1.1 We develop and maintain software
@@ -130,6 +277,7 @@ We specialize in IT architecture, software development, information security, qu
 
 ---
 
+<!-- source: docs/Who we are/respellion-model.md#L1-L73 sha:af52130 -->
 ### 2.2 The Respellion Model — No Management, No Job Descriptions
 
 #### 2.2.1 Core Principles
@@ -202,6 +350,7 @@ Blog – [Holacracy](https://www.holacracy.org/blog/)
 
 ---
 
+<!-- source: docs/Who we are/qms-design.md#L1-L105 sha:e200cc7 -->
 ### 2.3 Quality Manual (QMS) Respellion (ISO 9001:2015)
 
 This document describes the Quality Management System (QMS) of Respellion. Our QMS is designed to deliver maximum value to our customers through "sustainable digitization" without unnecessary bureaucracy. We use Holacracy as a governance model and Agile/DevOps as an operational standard.
@@ -315,6 +464,7 @@ Our structure is self-cleaning. By continuously processing Tensions in Governanc
 
 ---
 
+<!-- source: docs/Who we are/your-first-day.md#L1-L29 sha:922f9a1 -->
 ### 2.4 Welcome to Respellion! (Your First Day)
 
 We have collected some useful information for you to start with. In the first few days, we also plan a few appointments in your calendar.
@@ -342,6 +492,7 @@ All the necessary information is available via our employee handbook or the inte
 
 ## 3. How We Work Together
 
+<!-- source: docs/How we work together/our-purpose.md#L1-L19 sha:a4f8446 -->
 ### 3.1 Purpose and Impact
 
 #### 3.1.1 Purpose
@@ -358,6 +509,7 @@ Read more about our knowledge areas on our website.
 
 ---
 
+<!-- source: docs/How we work together/core-values.md#L1-L74 sha:1827813 -->
 ### 3.2 Our Core Values and Manifest
 
 #### 3.2.1 Our core values
@@ -416,6 +568,8 @@ Our roles are described on Glassfrog.
 
 ---
 
+<!-- source: docs/How we work together/coaching-culture-faq.md#L1-L25 sha:eb3f77a -->
+<!-- conflict-ref: huddle-checkin-frequency, huddle-elevator-cadence, capacity-framework-areas -->
 ### 3.3 Coaching Culture FAQ
 
 #### 3.3.1 What does the coaching culture at Respellion entail and how did this concept come about?
@@ -444,6 +598,8 @@ Openness and vulnerability are seen as essential elements for the success of the
 
 ---
 
+<!-- source: docs/How we work together/circles-huddles-celebrations.md#L1-L21 sha:5373a46 -->
+<!-- conflict-ref: huddle-checkin-frequency, huddle-elevator-cadence, capacity-framework-areas -->
 ### 3.4 Circles, Huddles and Celebrations
 
 At Respellion, we've evolved beyond traditional performance management to embrace a coaching culture where continuous improvement and collaboration thrive. Our structure is designed to foster regular feedback, support, and guidance among all team members.
@@ -466,6 +622,7 @@ The Personal Development Plan (POP) you'll create uses Ofman's Core Quadrant mod
 
 ---
 
+<!-- source: docs/How we work together/office-information.md#L1-L29 sha:c213da7 -->
 ### 3.5 Office Information
 
 Respellion has an office in the PostNL building at Waldorpstraat 5 in The Hague, near the Den Haag Hollands Spoor station. The building is open from approximately 06:00 to 22:00.

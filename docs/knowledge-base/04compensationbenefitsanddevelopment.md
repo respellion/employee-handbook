@@ -6,6 +6,9 @@ category: compensation-benefits-development
 language: en
 jurisdiction: NL
 audience: [employee]
+version: 1.1.0
+last_updated: "2026-05-18"
+last_source_commit: fb9a84a
 topics:
   - secondary-benefits
   - vacation-days
@@ -76,13 +79,136 @@ key_entities:
     - "finance@respellion.com"
     - "NMBRS portal (https://www.nmbrs.com/nl/inloggen)"
     - "Doen Pensioen dashboard"
+entities:
+  - { id: "entity:org/respellion",                 type: organization, label: "Respellion" }
+  - { id: "entity:org/asr-doen-pensioen",          type: organization, label: "a.s.r. Doen Pensioen" }
+  - { id: "entity:org/zuyderleven",                type: organization, label: "Zuyderleven" }
+  - { id: "entity:org/uwv",                        type: organization, label: "UWV" }
+  - { id: "entity:tool/nmbrs",                     type: tool, label: "NMBRS" }
+  - { id: "entity:tool/sharepoint",                type: tool, label: "SharePoint" }
+  - { id: "entity:tool/1password",                 type: tool, label: "1Password" }
+  - { id: "entity:tool/miro",                      type: tool, label: "Miro" }
+  - { id: "entity:tool/ns-business-card",          type: tool, label: "NS business card" }
+  - { id: "entity:tool/doen-pensioen-dashboard",   type: tool, label: "Doen Pensioen dashboard" }
+  - { id: "entity:role/people-officer",            type: role, label: "People Officer" }
+  - { id: "entity:role/workplace-facilitator",     type: role, label: "Workplace facilitator" }
+  - { id: "entity:concept/defined-contribution-scheme", type: policy, label: "Defined Contribution scheme (beschikbare premieregeling)", lang: nl }
+  - { id: "entity:concept/aow",                    type: concept, label: "AOW (state pension)", aliases: ["AOW"] }
+  - { id: "entity:concept/franchise",              type: concept, label: "Franchise (pension threshold)", lang: nl }
+  - { id: "entity:concept/pension-base",           type: concept, label: "Pension base (pensioengrondslag)", lang: nl }
+  - { id: "entity:concept/life-cycle",             type: concept, label: "Life Cycle investing profile" }
+  - { id: "entity:concept/anw-gap-insurance",      type: concept, label: "ANW Gap Insurance" }
+  - { id: "entity:concept/wia-insurance",          type: concept, label: "WIA disability insurance", aliases: ["WIA"] }
+  - { id: "entity:concept/wkr",                    type: policy, label: "Werkkostenregeling", aliases: ["WKR"], lang: nl }
+  - { id: "entity:concept/coaching-culture",       type: concept, label: "Coaching Culture" }
+  - { id: "entity:event/huddle-checkin",           type: event, label: "Huddle Check-in" }
+  - { id: "entity:event/huddle-elevator",          type: event, label: "Huddle Elevator" }
+  - { id: "entity:concept/personal-development-plan", type: concept, label: "Personal Development Plan", aliases: ["POP"] }
+  - { id: "entity:concept/ofman-core-quadrant",    type: concept, label: "Ofman Core Quadrant" }
+  - { id: "entity:concept/capacity-building",      type: concept, label: "Capacity Building Framework" }
+  - { id: "entity:concept/pillar-a",               type: concept, label: "Pillar A — Basic Experience & Expertise" }
+  - { id: "entity:concept/pillar-b",               type: concept, label: "Pillar B — Role Fulfilment & Responsibility" }
+  - { id: "entity:concept/pillar-c",               type: concept, label: "Pillar C — Impact & Results" }
+  - { id: "entity:concept/pillar-d",               type: concept, label: "Pillar D — Development & Learning Curve" }
+  - { id: "entity:concept/pillar-e",               type: concept, label: "Pillar E — Culture & Collaboration" }
+  - { id: "entity:benefit/vacation-days",          type: benefit, label: "Vacation Days" }
+  - { id: "entity:benefit/holiday-allowance",      type: benefit, label: "Holiday Allowance" }
+  - { id: "entity:benefit/travel-allowance",       type: benefit, label: "Travel Allowance" }
+  - { id: "entity:benefit/professional-development", type: benefit, label: "Professional Development time" }
+  - { id: "entity:benefit/flexible-holidays",      type: benefit, label: "Flexible Public Holidays" }
+  - { id: "entity:benefit/conferences",            type: benefit, label: "Conferences" }
+  - { id: "entity:benefit/pension",                type: benefit, label: "Pension Scheme" }
+  - { id: "entity:benefit/wia",                    type: benefit, label: "Disability Insurance (WIA)" }
+  - { id: "entity:benefit/mobile-phone",           type: benefit, label: "Mobile Phone Allowance" }
+  - { id: "entity:metric/fte-vacation-days",       type: monetary_constant, label: "Vacation days (FTE)", value: 25, unit: "days" }
+  - { id: "entity:metric/fte-vacation-hours",      type: monetary_constant, label: "Vacation hours (FTE)", value: 200, unit: "hours" }
+  - { id: "entity:metric/holiday-allowance-pct",   type: monetary_constant, label: "Holiday Allowance", value: 8, unit: "percent" }
+  - { id: "entity:metric/km-allowance",            type: monetary_constant, label: "Travel allowance per kilometre", value: 0.23, unit: "EUR/km" }
+  - { id: "entity:metric/professional-dev-hours",  type: monetary_constant, label: "Professional development hours/year", value: 40, unit: "hours" }
+  - { id: "entity:metric/mobile-allowance",        type: monetary_constant, label: "Mobile phone allowance", value: 35, unit: "EUR/month" }
+  - { id: "entity:metric/pension-premium-pct",     type: monetary_constant, label: "Pension contribution rate", value: 10, unit: "percent of pension base" }
+  - { id: "entity:metric/pension-split",           type: monetary_constant, label: "Pension premium split employee/employer", value: "50/50" }
+  - { id: "entity:metric/franchise-2026",          type: monetary_constant, label: "Pension franchise 2026", value: 19172.00, unit: "EUR" }
+  - { id: "entity:metric/max-pensionable-salary",  type: monetary_constant, label: "Maximum pensionable salary", value: 137800.00, unit: "EUR" }
+  - { id: "entity:metric/partner-pension-pct",     type: monetary_constant, label: "Partner's pension benefit", value: 30, unit: "percent of salary, lifelong" }
+  - { id: "entity:metric/orphan-pension-pct",      type: monetary_constant, label: "Orphan's pension benefit", value: 20, unit: "percent of salary until age 25" }
+  - { id: "entity:metric/laptop-bag-max",          type: monetary_constant, label: "Laptop bag reimbursement maximum", value: 100, unit: "EUR" }
+  - { id: "entity:metric/expense-submission-days", type: monetary_constant, label: "Expense submission window", value: 30, unit: "days" }
+  - { id: "entity:metric/conference-hours",        type: monetary_constant, label: "Conference attendance per year", value: 40, unit: "hours" }
+  - { id: "entity:metric/wia-threshold-years",     type: monetary_constant, label: "WIA covers long-term disability beyond", value: 2, unit: "years" }
+  - { id: "entity:metric/pillar-a-weight",         type: metric, label: "Pillar A weighting", value: 100, unit: "percent" }
+  - { id: "entity:metric/pillar-b-weight",         type: metric, label: "Pillar B weighting", value: 75,  unit: "percent" }
+  - { id: "entity:metric/pillar-c-weight",         type: metric, label: "Pillar C weighting", value: 80,  unit: "percent" }
+  - { id: "entity:metric/pillar-d-weight",         type: metric, label: "Pillar D weighting", value: 100, unit: "percent" }
+  - { id: "entity:metric/pillar-e-weight",         type: metric, label: "Pillar E weighting", value: 80,  unit: "percent" }
+relations:
+  - { s: "entity:org/respellion", p: "pension_provider",   o: "entity:org/asr-doen-pensioen" }
+  - { s: "entity:org/respellion", p: "pension_advisor",    o: "entity:org/zuyderleven" }
+  - { s: "entity:org/respellion", p: "expense_tool",       o: "entity:tool/nmbrs" }
+  - { s: "entity:org/respellion", p: "subscription_vault", o: "entity:tool/1password" }
+  - { s: "entity:org/respellion", p: "book_inventory_in",  o: "entity:tool/sharepoint" }
+  - { s: "entity:benefit/pension",  p: "scheme",           o: "entity:concept/defined-contribution-scheme" }
+  - { s: "entity:benefit/pension",  p: "premium",          o: "entity:metric/pension-premium-pct" }
+  - { s: "entity:benefit/pension",  p: "split",            o: "entity:metric/pension-split" }
+  - { s: "entity:benefit/pension",  p: "franchise_2026",   o: "entity:metric/franchise-2026" }
+  - { s: "entity:benefit/pension",  p: "max_pensionable_salary", o: "entity:metric/max-pensionable-salary" }
+  - { s: "entity:benefit/pension",  p: "partner_pension",  o: "entity:metric/partner-pension-pct" }
+  - { s: "entity:benefit/pension",  p: "orphan_pension",   o: "entity:metric/orphan-pension-pct" }
+  - { s: "entity:benefit/pension",  p: "portal",           o: "entity:tool/doen-pensioen-dashboard" }
+  - { s: "entity:benefit/vacation-days", p: "amount_fte",  o: "entity:metric/fte-vacation-days" }
+  - { s: "entity:benefit/holiday-allowance", p: "rate",    o: "entity:metric/holiday-allowance-pct" }
+  - { s: "entity:benefit/travel-allowance",  p: "rate",    o: "entity:metric/km-allowance" }
+  - { s: "entity:benefit/professional-development", p: "hours_per_year", o: "entity:metric/professional-dev-hours" }
+  - { s: "entity:benefit/conferences", p: "hours_per_year", o: "entity:metric/conference-hours" }
+  - { s: "entity:benefit/mobile-phone", p: "monthly_allowance", o: "entity:metric/mobile-allowance" }
+  - { s: "entity:benefit/wia", p: "covers_disability_beyond", o: "entity:metric/wia-threshold-years" }
+  - { s: "entity:benefit/wia", p: "premium_paid_by", o: "entity:org/respellion" }
+  - { s: "entity:concept/pillar-a", p: "weighted_at", o: "entity:metric/pillar-a-weight" }
+  - { s: "entity:concept/pillar-b", p: "weighted_at", o: "entity:metric/pillar-b-weight" }
+  - { s: "entity:concept/pillar-c", p: "weighted_at", o: "entity:metric/pillar-c-weight" }
+  - { s: "entity:concept/pillar-d", p: "weighted_at", o: "entity:metric/pillar-d-weight" }
+  - { s: "entity:concept/pillar-e", p: "weighted_at", o: "entity:metric/pillar-e-weight" }
+  - { s: "entity:concept/personal-development-plan", p: "uses_model", o: "entity:concept/ofman-core-quadrant" }
+  - { s: "entity:concept/personal-development-plan", p: "stored_in", o: "entity:tool/miro" }
+  - { s: "entity:event/huddle-checkin",  p: "has_cadence", o: "twice-weekly", note: "Conflicts with file 01 sources which say 'weekly' — see conflicts.huddle-checkin-frequency" }
+  - { s: "entity:event/huddle-elevator", p: "has_cadence", o: "monthly", note: "Conflicts with file 01 source respellion-model.md which says 'every two months' — see conflicts.huddle-elevator-cadence" }
+  - { s: "entity:concept/capacity-building", p: "covers_area", o: "Intellectual Capacity", note: "4-area variant from coaching-culture.md — see conflicts.capacity-framework-areas" }
+  - { s: "entity:concept/capacity-building", p: "covers_area", o: "Physical Capacity" }
+  - { s: "entity:concept/capacity-building", p: "covers_area", o: "Emotional Capacity" }
+  - { s: "entity:concept/capacity-building", p: "covers_area", o: "Spiritual Capacity" }
+  - { s: "entity:org/respellion", p: "expense_contact", o: "finance@respellion.com" }
+  - { s: "entity:org/respellion", p: "expense_submission_window", o: "entity:metric/expense-submission-days" }
+conflicts:
+  - id: huddle-checkin-frequency
+    description: "Frequency of Huddle Check-ins disagrees with file 01 sources."
+    status: open
+    sources:
+      - { path: "docs/Learning & personal development/coaching-culture.md",   lines: "8",  quote: "These twice-weekly small group meetings" }
+      - { path: "docs/How we work together/coaching-culture-faq.md",          lines: "9",  quote: "weekly 'huddle check-ins' (once a week)" }
+      - { path: "docs/How we work together/circles-huddles-celebrations.md",  lines: "7",  quote: "These weekly small group meetings" }
+      - { path: "docs/Who we are/respellion-model.md",                        lines: "39", quote: "A Huddle check-in meeting per week" }
+  - id: huddle-elevator-cadence
+    description: "Cadence of Huddle Elevator sessions disagrees across sources."
+    status: open
+    sources:
+      - { path: "docs/Learning & personal development/coaching-culture.md",   lines: "10", quote: "These monthly in-depth sessions" }
+      - { path: "docs/How we work together/coaching-culture-faq.md",          lines: "9",  quote: "monthly 'huddle elevators'" }
+      - { path: "docs/How we work together/circles-huddles-celebrations.md",  lines: "9",  quote: "These two monthly in-depth sessions" }
+      - { path: "docs/Who we are/respellion-model.md",                        lines: "40", quote: "A Huddle Elevator session every two months" }
+  - id: capacity-framework-areas
+    description: "The Capacity Building Framework has four areas in this file's source and three in file 01 sources."
+    status: open
+    sources:
+      - { path: "docs/Learning & personal development/coaching-culture.md",   lines: "19-34", quote: "Intellectual Capacity, Physical Capacity, Emotional Capacity, Spiritual Capacity" }
+      - { path: "docs/How we work together/coaching-culture-faq.md",          lines: "13",    quote: "three main areas: professional capacity, emotional capacity, physical capacity" }
+      - { path: "docs/How we work together/circles-huddles-celebrations.md",  lines: "13-17", quote: "Professional Capacity, Emotional Capacity, Physical Capacity" }
 source_files:
-  - docs/Pension scheme & Benefits/secondary-employment-benefits.md
-  - docs/Pension scheme & Benefits/jouw-pensioen.md
-  - docs/Learning & personal development/coaching-culture.md
-  - docs/Learning & personal development/growth-reward.md
-  - docs/Learning & personal development/conferences.md
-  - docs/Spending and contracting/spending-purchasing.md
+  - { path: "docs/Pension scheme & Benefits/secondary-employment-benefits.md", sha: "651e4a98e62782347b98989448fe1c9d4dacf8ac", lines: "1-16" }
+  - { path: "docs/Pension scheme & Benefits/jouw-pensioen.md",                 sha: "36836e3a4b000c20330061ae6b05037d6b37ff95", lines: "1-45" }
+  - { path: "docs/Learning & personal development/coaching-culture.md",        sha: "b80a9fb6f2b1bc54ba97ffa9c52c188f18d214e5", lines: "1-42" }
+  - { path: "docs/Learning & personal development/growth-reward.md",           sha: "503214619111d11a67271df1923dc02f16527cb7", lines: "1-61" }
+  - { path: "docs/Learning & personal development/conferences.md",             sha: "b9c87b901b24ff1de10b2322b88b45ffd0a26cc1", lines: "1-17" }
+  - { path: "docs/Spending and contracting/spending-purchasing.md",            sha: "548e5b07d93a20e7a49b60224fff3200ff100f84", lines: "1-68" }
 related_files:
   - 01-organization-identity-and-culture.md
   - 02-daily-operations-and-workplace.md
@@ -93,6 +219,26 @@ related_files:
 
 > Source consolidation: this document merges the content originally distributed across the `Pension scheme & Benefits`, `Learning & personal development`, and `Spending and contracting` sections of the employee handbook into a single AI-ingestable knowledge unit.
 
+## Glossary
+
+| Abbreviation | Expansion |
+|---|---|
+| ANW | Algemene nabestaandenwet — Dutch surviving relatives' benefits law |
+| AO | Arbeidsongeschiktheid — incapacity for work |
+| AOW | Algemene Ouderdomswet — Dutch state pension |
+| CPI | Consumer Price Index |
+| FTE | Full-Time Equivalent |
+| NS | Nederlandse Spoorwegen (Dutch railways) |
+| OKR | Objectives and Key Results |
+| POP | Persoonlijk Ontwikkelplan — Personal Development Plan |
+| UWV | Uitvoeringsinstituut Werknemersverzekeringen — Dutch Employee Insurance Agency |
+| WIA | Wet werk en inkomen naar arbeidsvermogen — Dutch long-term disability insurance |
+| WKR | Werkkostenregeling — Dutch work-related expenses tax scheme |
+| Beschikbare premieregeling | Defined Contribution scheme (Dutch) |
+| Pensioengrondslag | Pension base (Dutch) |
+| Franchise | Pension threshold (Dutch term used in NL pension law) |
+
+<!-- source: docs/Pension scheme & Benefits/secondary-employment-benefits.md#L1-L16 sha:651e4a9 -->
 ## 1. Secondary Employment Benefits
 
 At Respellion, we believe in taking good care of our team. Below is a summary of the secondary benefits you are entitled to:
@@ -109,6 +255,7 @@ At Respellion, we believe in taking good care of our team. Below is a summary of
 
 ---
 
+<!-- source: docs/Pension scheme & Benefits/jouw-pensioen.md#L1-L45 sha:36836e3 -->
 ## 2. Your Pension
 
 At Respellion, we believe it is important to take good care of each other, not just today, but also with an eye toward the future. That is why we have established a pension scheme with **a.s.r. Doen Pensioen**, supported by advice from **Zuyderleven**.
@@ -156,6 +303,8 @@ You have direct influence over your own pension:
 
 ---
 
+<!-- source: docs/Learning & personal development/coaching-culture.md#L1-L42 sha:b80a9fb -->
+<!-- conflict-ref: huddle-checkin-frequency, huddle-elevator-cadence, capacity-framework-areas -->
 ## 3. Coaching Culture (Learning & Personal Development)
 
 At Respellion, we've evolved beyond traditional performance management to embrace a coaching culture where continuous improvement and collaboration thrive. Our structure is designed to foster regular feedback, support, and guidance among all team members.
@@ -184,6 +333,7 @@ All the personal development plans are accessible for all colleagues in a Miro b
 
 ---
 
+<!-- source: docs/Learning & personal development/growth-reward.md#L1-L61 sha:5032146 -->
 ## 4. Growth & Reward
 
 At Respellion, we believe in a fair reward structure that is as transparent and enterprising as our way of working. This also means that the model can be adapted if there is a reason to do so. We move away from rigid job scales and instead focus on your actual added value.
@@ -242,6 +392,7 @@ Finally, we line up all the new salaries. Does the distribution feel logical? Is
 
 ---
 
+<!-- source: docs/Learning & personal development/conferences.md#L1-L17 sha:b9c87b9 -->
 ## 5. Conferences
 
 ### 5.1 Overview
@@ -269,6 +420,7 @@ For any questions about conference attendance, please contact the people officer
 
 ---
 
+<!-- source: docs/Spending and contracting/spending-purchasing.md#L1-L68 sha:548e5b0 -->
 ## 6. Spending and Purchasing
 
 ### 6.1 General Principles
