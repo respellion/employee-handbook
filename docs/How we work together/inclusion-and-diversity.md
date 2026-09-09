@@ -27,12 +27,3 @@ When you expense food and drinks for a team event, follow the normal rules and W
 ## Handling Sensitive Personal Data
 
 Diversity-related information is sensitive. Under the GDPR, data on a person's race, religion, health, and similar attributes are **special categories of personal data**: processing them is prohibited unless a specific legal exception applies, and you must consult the Privacy Officer before using such data. Restrict access to personal data to those who need it for their role, and store sensitive data only in secure applications. (Rules: [Security → Working with Personal Data](security.md).)
-
-## Related Topics
-
-- [How We Work Together](how-we-work-together.md) — the core values, manifest, and Capacity Building Framework this page draws on.
-- [Holiday and Leave](holiday-and-leave.md) — the canonical Interchangeable Holiday Policy and the full public-holiday rules.
-- [Who We Are](who-we-are.md) — the Holacracy model that distributes authority and voice.
-- [Security](security.md) — protected handling of special-category personal data.
-- [Roles & Accountabilities](roles-and-accountabilities.md) — the People Officer and Sustainability officer roles.
-- [Spending and Contracting](spending-and-contracting.md) — expensing team events within WKR rules.
