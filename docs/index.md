@@ -28,6 +28,7 @@ So, whether you're a future colleague or a curious partner: **You're welcome to 
     - ❤️ [Our core values and manifest](How we work together/core-values.md)
     - 🤝 [Coaching Culture FAQ](How we work together/coaching-culture-faq.md)
     - ⚪ [Circles, Huddles and Celebrations](How we work together/circles-huddles-celebrations.md)
+    - 🌈 [Inclusion and Diversity](How we work together/inclusion-and-diversity.md)
     - 🏢 [Office information](How we work together/office-information.md)
 
     ## Day to day
