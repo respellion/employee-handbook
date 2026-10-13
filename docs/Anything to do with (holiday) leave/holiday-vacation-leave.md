@@ -2,15 +2,12 @@
 
 ## Leave procedure
 
-When you take leave, you’ll, of course, have a critical look at your calendar and your colleagues and make sure that your colleagues know that you are not there before you take leave. The administration is done in "Shifts" within Microsoft Teams. 
-
+When you take leave, you’ll, of course, have a critical look at your calendar and your colleagues and make sure that your colleagues know that you are not there before you take leave. The administration is done in the leave module within Exact Online. 
  
 
-Make a new Request for Time-Off in Microsoft Shifts with the right category. This also includes Sick Leave. 
+Make a new Request for Leave in Exact Online with the right category.
 
-Your request will be approved by the People Officer after which the leave will be visible in Shifts to the whole team. 
-
- 
+Your request is automatically approved so you are responsible to inform the customer and your colleagues.  
 
 Create an event in your own calendar for your holiday to ensure your agenda is blocked. 
 
